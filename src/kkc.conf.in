@@ -1,0 +1,7 @@
+[InputMethod]
+UniqueName=kkc
+_Name=Kkc
+IconName=kkc
+Priority=1
+LangCode=ja
+Parent=fcitx-kkc

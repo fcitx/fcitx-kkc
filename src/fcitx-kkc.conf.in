@@ -2,9 +2,9 @@
 Name=fcitx-kkc
 _GeneralName=Kkc Addon of Fcitx
 _Comment=This is a template of a simple Fcitx Module
-Category=Module
+Category=InputMethod
 Enabled=True
 Library=fcitx-kkc.so
 Type=SharedLibrary
 Dependency=
-Priority=80
+IMRegisterMethod=ConfigFile

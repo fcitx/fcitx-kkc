@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 2.6)
 # The Project Name
 project(fcitx-kkc)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
+include(FindPkgConfig)
+pkg_check_modules(LIBKKC "kkc-1.0>=0.1.10")
 find_package(Fcitx 4.2.7 REQUIRED)
 
 # This will add a uninstall target. Comment out this line if other cmake packages

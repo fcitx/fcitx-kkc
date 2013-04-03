@@ -23,6 +23,7 @@
 
 #include "kkc.h"
 #include <fcitx/instance.h>
+#include <libkkc/libkkc.h>
 
 #define _(x) dgettext("fcitx-kkc", x)
 
@@ -33,6 +34,8 @@ typedef struct {
 typedef struct {
     FcitxKkcConfig config;
     FcitxInstance *owner;
+    KkcLanguageModel* model;
+    KkcContext* context;
 } FcitxKkc;
 
 CONFIG_BINDING_DECLARE(FcitxKkcConfig);
