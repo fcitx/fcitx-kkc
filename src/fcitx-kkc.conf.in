@@ -1,0 +1,10 @@
+[Addon]
+Name=fcitx-kkc
+_GeneralName=Kkc Addon of Fcitx
+_Comment=This is a template of a simple Fcitx Module
+Category=Module
+Enabled=True
+Library=fcitx-kkc.so
+Type=SharedLibrary
+Dependency=
+Priority=80
