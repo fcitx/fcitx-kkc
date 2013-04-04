@@ -23,12 +23,24 @@
 
 #include "kkc.h"
 #include <fcitx/instance.h>
+#include <fcitx/candidate.h>
 #include <libkkc/libkkc.h>
 
 #define _(x) dgettext("fcitx-kkc", x)
+#define N_(x) (x)
 
 typedef struct {
     FcitxGenericConfig gconfig;
+    KkcPunctuationStyle punctuationStyle;
+    KkcInputMode initialInputMode;
+    FcitxCandidateLayoutHint candidateLayout;
+    int nTriggersToShowCandWin;
+    int pageSize;
+    FcitxHotkey prevPageKey[2];
+    FcitxHotkey nextPageKey[2];
+    FcitxHotkey cursorUpKey[2];
+    FcitxHotkey cursorDownKey[2];
+    boolean showAnnotation;
 } FcitxKkcConfig;
 
 typedef struct {
@@ -36,6 +48,8 @@ typedef struct {
     FcitxInstance *owner;
     KkcLanguageModel* model;
     KkcContext* context;
+    FcitxUIMenu inputModeMenu;
+    gulong handler;
 } FcitxKkc;
 
 CONFIG_BINDING_DECLARE(FcitxKkcConfig);

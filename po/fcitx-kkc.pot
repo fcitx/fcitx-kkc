@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-01-18 23:20-0500\n"
+"POT-Creation-Date: 2013-04-14 20:04-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,43 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/fcitx-example.conf.in:3
+#: src/kkc.c:121 src/kkc.conf.in:3
+msgid "Kkc"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
 msgstr ""
 
-#: src/fcitx-example.conf.in:4
+#: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
+msgstr ""
+
+#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:6 src/fcitx-kkc.desc:11
+#: src/fcitx-kkc.desc:16 src/fcitx-kkc.desc:21 src/fcitx-kkc.desc:26
+msgid "General"
+msgstr ""
+
+#: src/fcitx-kkc.desc:3
+msgid "Page size"
+msgstr ""
+
+#: src/fcitx-kkc.desc:8
+msgid "Candidates Page Up"
+msgstr ""
+
+#: src/fcitx-kkc.desc:13
+msgid "Candidates Page Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:18
+msgid "Cursor Up"
+msgstr ""
+
+#: src/fcitx-kkc.desc:23
+msgid "Cursor Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:28
+msgid "Show Annotation"
 msgstr ""

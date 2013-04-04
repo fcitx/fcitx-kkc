@@ -21,4 +21,14 @@
 #include "kkc-internal.h"
 
 CONFIG_BINDING_BEGIN(FcitxKkcConfig)
+CONFIG_BINDING_REGISTER("General", "PunctuationStyle", punctuationStyle)
+CONFIG_BINDING_REGISTER("General", "InitialInputMode", initialInputMode)
+CONFIG_BINDING_REGISTER("General", "PageSize", pageSize)
+CONFIG_BINDING_REGISTER("General", "CandidateLayout", candidateLayout)
+CONFIG_BINDING_REGISTER("General", "NTriggersToShowCandWin", nTriggersToShowCandWin)
+CONFIG_BINDING_REGISTER("General", "CandidatesPageUpKey", prevPageKey)
+CONFIG_BINDING_REGISTER("General", "CandidatesPageDownKey", nextPageKey)
+CONFIG_BINDING_REGISTER("General", "CursorUp", cursorUpKey)
+CONFIG_BINDING_REGISTER("General", "CursorDown", cursorDownKey)
+CONFIG_BINDING_REGISTER("General", "ShowAnnotation", showAnnotation)
 CONFIG_BINDING_END()

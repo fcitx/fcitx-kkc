@@ -7,6 +7,10 @@ include(FindPkgConfig)
 pkg_check_modules(LIBKKC "kkc-1.0>=0.1.10")
 find_package(Fcitx 4.2.7 REQUIRED)
 
+if (NOT SKK_DEFAULT_PATH)
+    set(SKK_DEFAULT_PATH "/usr/share/skk/SKK-JISYO.L")
+endif ()
+
 # This will add a uninstall target. Comment out this line if other cmake packages
 # you are using already provides such target (e.g. KDE).
 _fcitx_add_uninstall_target()
@@ -28,3 +32,5 @@ configure_file(config.h.in config.h
 # related sources are processed.
 add_subdirectory(po)
 add_subdirectory(src)
+
+add_subdirectory(dictmanager)
