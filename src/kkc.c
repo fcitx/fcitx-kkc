@@ -194,7 +194,7 @@ FcitxKkcCreate(FcitxInstance *instance)
         FcitxUISetStatusVisable(instance, STATUS_NAME, false); \
     } while(0)
 
-    INIT_MENU(kkc->inputModeMenu, InputMode, _("Input Mode"), "kkc-input-mode", input_mode_status, KKC_INPUT_MODE_LAST);
+    INIT_MENU(kkc->inputModeMenu, InputMode, _("Input Mode"), "kkc-input-mode", input_mode_status, KKC_INPUT_MODE_DIRECT + 1);
 
     kkc->handler = g_signal_connect(kkc->context, "notify::input-mode", G_CALLBACK(_kkc_input_mode_changed_cb), kkc);
     FcitxKkcUpdateInputMode(kkc);
@@ -244,7 +244,7 @@ INPUT_RETURN_VALUE FcitxKkcDoInputReal(void* arg, FcitxKeySym sym, unsigned int 
 
     FcitxInputState* input = FcitxInstanceGetInputState(kkc->owner);
     uint32_t keycode = FcitxInputStateGetKeyCode(input);
-    KkcKeyEvent* key = kkc_key_event_new_from_x_event(sym, keycode, state, NULL);
+    KkcKeyEvent* key = kkc_key_event_new_from_x_event(sym, keycode, state);
     if (!key) {
         return IRV_TO_PROCESS;
     }
@@ -298,7 +298,6 @@ INPUT_RETURN_VALUE FcitxKkcGetCandWord(void* arg, FcitxCandidateWord* word)
     KkcCandidateList* kkcCandidates = kkc_context_get_candidates(kkc->context);
     int idx = *((int*)word->priv);
     gboolean retval = kkc_candidate_list_select_at(kkcCandidates, idx % kkc->config.pageSize);
-    FcitxLog(INFO, "%d",  (kkc_candidate_list_get_page_visible(kkcCandidates)));
     if (retval) {
         return IRV_DISPLAY_CANDWORDS;
     }

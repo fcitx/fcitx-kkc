@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.6)
 project(fcitx-kkc)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 include(FindPkgConfig)
-pkg_check_modules(LIBKKC "kkc-1.0>=0.1.10")
+pkg_check_modules(LIBKKC "kkc-1.0>=0.1.10" REQUIRED)
 find_package(Fcitx 4.2.7 REQUIRED)
 
 if (NOT SKK_DEFAULT_PATH)
