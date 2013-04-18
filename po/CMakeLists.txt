@@ -1,6 +1,6 @@
 # Add language code here each language code should correspond to a
 # [language].po file in this directory.
-set(PO_LANGS
+set(PO_LANGS ja
   # zh_CN
   )
 foreach(lang ${PO_LANGS})
