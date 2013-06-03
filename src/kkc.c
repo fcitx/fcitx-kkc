@@ -124,7 +124,9 @@ FcitxKkcCreate(FcitxInstance *instance)
     bindtextdomain("fcitx-kkc", LOCALEDIR);
     kkc->owner = instance;
 
+#if !GLIB_CHECK_VERSION(2, 36, 0)
     g_type_init();
+#endif
     kkc_init();
 
     KkcLanguageModel* model = kkc_language_model_load("sorted3", NULL);
@@ -148,7 +150,7 @@ FcitxKkcCreate(FcitxInstance *instance)
     kkc_context_set_punctuation_style(kkc->context, KKC_PUNCTUATION_STYLE_JA_JA);
     kkc_context_set_input_mode(kkc->context, KKC_INPUT_MODE_HIRAGANA);
 
-    KkcRule* rule = kkc_rule_new(kkc_rule_find_rule("default"), NULL);
+    KkcRule* rule = kkc_rule_new(kkc_rule_metadata_find("default"), NULL);
 
     kkc_context_set_typing_rule(kkc->context, rule);
 
