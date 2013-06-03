@@ -1,7 +1,6 @@
 # Add language code here each language code should correspond to a
 # [language].po file in this directory.
-set(PO_LANGS ja
-  # zh_CN
+set(PO_LANGS de ja zh_CN
   )
 foreach(lang ${PO_LANGS})
   fcitx_translate_add_po_file("${lang}" "${lang}.po")
