@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-04 11:17-0400\n"
-"PO-Revision-Date: 2013-04-14 13:44+0000\n"
+"POT-Creation-Date: 2013-06-04 11:20-0400\n"
+"PO-Revision-Date: 2013-04-25 13:43+0000\n"
 "Last-Translator: しろう <>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/"
 "ja/)\n"
@@ -21,70 +21,70 @@ msgstr ""
 
 #: src/fcitx-kkc.desc:31
 msgid "Candidate List Layout"
-msgstr ""
+msgstr "候補リストのレイアウト"
 
 #: src/fcitx-kkc.desc:52
 msgid "Candidates Page Down"
-msgstr ""
+msgstr "前のページへ"
 
 #: src/fcitx-kkc.desc:47
 msgid "Candidates Page Up"
-msgstr ""
+msgstr "次のページへ"
 
 #: src/fcitx-kkc.desc:62
 msgid "Cursor Down"
-msgstr ""
+msgstr "カーソルを下に"
 
 #: src/fcitx-kkc.desc:57
 msgid "Cursor Up"
-msgstr ""
+msgstr "カーソルを上に"
 
 #: src/kkc.c:80 src/fcitx-kkc.desc:19
 msgid "Direct input"
-msgstr ""
+msgstr "直接入力"
 
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
 #: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
 #: src/fcitx-kkc.desc:65
 msgid "General"
-msgstr ""
+msgstr "全般"
 
 #: src/fcitx-kkc.desc:33
 msgid "Global"
-msgstr ""
+msgstr "全体"
 
 #: src/kkc.c:79 src/fcitx-kkc.desc:18
 msgid "Half width Katakana"
-msgstr ""
+msgstr "半角カタカナ"
 
 #: src/kkc.c:77 src/fcitx-kkc.desc:16
 msgid "Hiragana"
-msgstr ""
+msgstr "ひらがな"
 
 #: src/fcitx-kkc.desc:35
 msgid "Horizontal"
-msgstr ""
+msgstr "水平"
 
 #: src/fcitx-kkc.desc:13
 msgid "Initial Input Mode"
-msgstr ""
+msgstr "初期入力モード"
 
 #: src/kkc.c:199
 msgid "Input Mode"
-msgstr ""
+msgstr "入力モード"
 
 #: src/fcitx-kkc.desc:6
 msgid "Japanese"
-msgstr ""
+msgstr "日本語"
 
 #: src/kkc.c:173 src/kkc.conf.in:3
 msgid "Kana Kanji"
-msgstr ""
+msgstr "かな漢字"
 
 #: src/kkc.c:78 src/fcitx-kkc.desc:17
 msgid "Katakana"
-msgstr ""
+msgstr "カタカナ"
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
@@ -92,19 +92,19 @@ msgstr "Fcitx 用 Kkc アドオン"
 
 #: src/fcitx-kkc.desc:7
 msgid "Latin"
-msgstr ""
+msgstr "英数"
 
 #: src/fcitx-kkc.desc:40
 msgid "Number candidate of Triggers To Show Candidate Window"
-msgstr ""
+msgstr "候補ウィンドウを表示するまでの候補数"
 
 #: src/fcitx-kkc.desc:24
 msgid "Page size"
-msgstr ""
+msgstr "候補ウィンドウの項目数"
 
 #: src/fcitx-kkc.desc:3
 msgid "Punctuation Style"
-msgstr ""
+msgstr "句読点スタイル"
 
 #: src/fcitx-kkc.desc:67
 msgid "Show Annotation"
@@ -116,12 +116,12 @@ msgstr "これは簡単な Fcitx モジュールのテンプレートです。"
 
 #: src/fcitx-kkc.desc:34
 msgid "Vertical"
-msgstr ""
+msgstr "垂直"
 
 #: src/kkc.c:81 src/fcitx-kkc.desc:8 src/fcitx-kkc.desc:20
 msgid "Wide latin"
-msgstr ""
+msgstr "全角英数"
 
 #: src/fcitx-kkc.desc:9
 msgid "Wide latin Japanese"
-msgstr ""
+msgstr "全角英字と日本語"

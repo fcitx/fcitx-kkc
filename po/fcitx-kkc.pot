@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-04-18 00:47-0400\n"
+"POT-Creation-Date: 2013-06-04 11:21-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgstr ""
 msgid "Wide latin"
 msgstr ""
 
-#: src/kkc.c:171 src/kkc.conf.in:3
+#: src/kkc.c:173 src/kkc.conf.in:3
 msgid "Kana Kanji"
 msgstr ""
 
-#: src/kkc.c:197
+#: src/kkc.c:199
 msgid "Input Mode"
 msgstr ""
 

@@ -3,125 +3,124 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# mar well <marwell.1980@freenet.de>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-04 11:20-0400\n"
-"PO-Revision-Date: 2013-05-22 06:18+0000\n"
-"Last-Translator: mar well <marwell.1980@freenet.de>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/fcitx/language/"
-"de/)\n"
-"Language: de\n"
+"POT-Creation-Date: 2013-06-04 11:21-0400\n"
+"PO-Revision-Date: 2013-04-26 12:47+0000\n"
+"Last-Translator: Alisha <alisha.4m@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/fcitx/"
+"language/zh_TW/)\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/fcitx-kkc.desc:31
 msgid "Candidate List Layout"
-msgstr "Layout der Kandidatenliste"
+msgstr "候選詞清單"
 
 #: src/fcitx-kkc.desc:52
 msgid "Candidates Page Down"
-msgstr "Kandidaten Seite zurück"
+msgstr "候選詞下一頁"
 
 #: src/fcitx-kkc.desc:47
 msgid "Candidates Page Up"
-msgstr "Kandidaten Seite weiter"
+msgstr "候選詞上一頁"
 
 #: src/fcitx-kkc.desc:62
 msgid "Cursor Down"
-msgstr "Cursor runter"
+msgstr "游標向下"
 
 #: src/fcitx-kkc.desc:57
 msgid "Cursor Up"
-msgstr "Cursor hoch"
+msgstr "游標向上"
 
 #: src/kkc.c:80 src/fcitx-kkc.desc:19
 msgid "Direct input"
-msgstr "Direkte Eingabe"
+msgstr "直接輸入"
 
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
 #: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
 #: src/fcitx-kkc.desc:65
 msgid "General"
-msgstr "Generell"
+msgstr "一般"
 
 #: src/fcitx-kkc.desc:33
 msgid "Global"
-msgstr "Global"
+msgstr "全域"
 
 #: src/kkc.c:79 src/fcitx-kkc.desc:18
 msgid "Half width Katakana"
-msgstr "Halbweites Katakana"
+msgstr "半形片假名"
 
 #: src/kkc.c:77 src/fcitx-kkc.desc:16
 msgid "Hiragana"
-msgstr "Hiragana"
+msgstr "平假名"
 
 #: src/fcitx-kkc.desc:35
 msgid "Horizontal"
-msgstr "Waagerecht"
+msgstr "橫向"
 
 #: src/fcitx-kkc.desc:13
 msgid "Initial Input Mode"
-msgstr "Eingabemodus beim Start"
+msgstr "初始輸入模式"
 
 #: src/kkc.c:199
 msgid "Input Mode"
-msgstr "Eingabemodus"
+msgstr "輸入模式"
 
 #: src/fcitx-kkc.desc:6
 msgid "Japanese"
-msgstr "Japanisch"
+msgstr "日語"
 
 #: src/kkc.c:173 src/kkc.conf.in:3
 msgid "Kana Kanji"
-msgstr "Kana Kanji"
+msgstr "假名漢字"
 
 #: src/kkc.c:78 src/fcitx-kkc.desc:17
 msgid "Katakana"
-msgstr "Katakana"
+msgstr "片假名"
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
-msgstr "Kkc Addon von Fcitx"
+msgstr "Fcitx 的 Kkc 附加元件"
 
 #: src/fcitx-kkc.desc:7
 msgid "Latin"
-msgstr "Lateinisch"
+msgstr "拉丁文"
 
 #: src/fcitx-kkc.desc:40
 msgid "Number candidate of Triggers To Show Candidate Window"
-msgstr "Anzahl der Kanditaten, bei der das Kandidatenfenster angezeigt wird"
+msgstr "觸發顯示候選詞視窗的按鍵次數"
 
 #: src/fcitx-kkc.desc:24
 msgid "Page size"
-msgstr "Seitengröße"
+msgstr "頁面大小"
 
 #: src/fcitx-kkc.desc:3
 msgid "Punctuation Style"
-msgstr "Stil der Interpunktion"
+msgstr "標點風格"
 
 #: src/fcitx-kkc.desc:67
 msgid "Show Annotation"
-msgstr "Anmerkungen zeigen"
+msgstr "顯示注釋"
 
 #: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
-msgstr "Das ist eine Vorlage für ein einfaches Fcitx-Modul"
+msgstr "這是一個簡單的 Fcitx 模組的範本"
 
 #: src/fcitx-kkc.desc:34
 msgid "Vertical"
-msgstr "Senkrecht"
+msgstr "縱向"
 
 #: src/kkc.c:81 src/fcitx-kkc.desc:8 src/fcitx-kkc.desc:20
 msgid "Wide latin"
-msgstr "Wide latin"
+msgstr "全形英文"
 
 #: src/fcitx-kkc.desc:9
 msgid "Wide latin Japanese"
-msgstr "Wide latin Japanese"
+msgstr "全形拉丁日語"
