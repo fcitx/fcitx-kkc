@@ -1,27 +1,127 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # しろう <>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-01-18 23:20-0500\n"
+"POT-Creation-Date: 2013-06-04 11:17-0400\n"
 "PO-Revision-Date: 2013-04-14 13:44+0000\n"
 "Last-Translator: しろう <>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/ja/)\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/"
+"ja/)\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/fcitx-example.conf.in:3
+#: src/fcitx-kkc.desc:31
+msgid "Candidate List Layout"
+msgstr ""
+
+#: src/fcitx-kkc.desc:52
+msgid "Candidates Page Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:47
+msgid "Candidates Page Up"
+msgstr ""
+
+#: src/fcitx-kkc.desc:62
+msgid "Cursor Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:57
+msgid "Cursor Up"
+msgstr ""
+
+#: src/kkc.c:80 src/fcitx-kkc.desc:19
+msgid "Direct input"
+msgstr ""
+
+#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
+#: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
+#: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
+#: src/fcitx-kkc.desc:65
+msgid "General"
+msgstr ""
+
+#: src/fcitx-kkc.desc:33
+msgid "Global"
+msgstr ""
+
+#: src/kkc.c:79 src/fcitx-kkc.desc:18
+msgid "Half width Katakana"
+msgstr ""
+
+#: src/kkc.c:77 src/fcitx-kkc.desc:16
+msgid "Hiragana"
+msgstr ""
+
+#: src/fcitx-kkc.desc:35
+msgid "Horizontal"
+msgstr ""
+
+#: src/fcitx-kkc.desc:13
+msgid "Initial Input Mode"
+msgstr ""
+
+#: src/kkc.c:199
+msgid "Input Mode"
+msgstr ""
+
+#: src/fcitx-kkc.desc:6
+msgid "Japanese"
+msgstr ""
+
+#: src/kkc.c:173 src/kkc.conf.in:3
+msgid "Kana Kanji"
+msgstr ""
+
+#: src/kkc.c:78 src/fcitx-kkc.desc:17
+msgid "Katakana"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
 msgstr "Fcitx 用 Kkc アドオン"
 
-#: src/fcitx-example.conf.in:4
+#: src/fcitx-kkc.desc:7
+msgid "Latin"
+msgstr ""
+
+#: src/fcitx-kkc.desc:40
+msgid "Number candidate of Triggers To Show Candidate Window"
+msgstr ""
+
+#: src/fcitx-kkc.desc:24
+msgid "Page size"
+msgstr ""
+
+#: src/fcitx-kkc.desc:3
+msgid "Punctuation Style"
+msgstr ""
+
+#: src/fcitx-kkc.desc:67
+msgid "Show Annotation"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
 msgstr "これは簡単な Fcitx モジュールのテンプレートです。"
+
+#: src/fcitx-kkc.desc:34
+msgid "Vertical"
+msgstr ""
+
+#: src/kkc.c:81 src/fcitx-kkc.desc:8 src/fcitx-kkc.desc:20
+msgid "Wide latin"
+msgstr ""
+
+#: src/fcitx-kkc.desc:9
+msgid "Wide latin Japanese"
+msgstr ""
