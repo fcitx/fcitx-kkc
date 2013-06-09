@@ -3,9 +3,16 @@ cmake_minimum_required(VERSION 2.6)
 # The Project Name
 project(fcitx-kkc)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
+option(ENABLE_QT "Enable Qt for GUI configuration" On)
+
 include(FindPkgConfig)
 pkg_check_modules(LIBKKC "kkc-1.0>=0.2.3" REQUIRED)
 find_package(Fcitx 4.2.7 REQUIRED)
+
+if (ENABLE_QT)
+find_package(Qt 4.8 REQUIRED)
+pkg_check_modules(FCITX_QT "fcitx-qt>=4.2.7" REQUIRED)
+endif ()
 
 if (NOT SKK_DEFAULT_PATH)
     set(SKK_DEFAULT_PATH "/usr/share/skk/SKK-JISYO.L")
@@ -33,4 +40,4 @@ configure_file(config.h.in config.h
 add_subdirectory(po)
 add_subdirectory(src)
 
-add_subdirectory(dictmanager)
+add_subdirectory(gui)
