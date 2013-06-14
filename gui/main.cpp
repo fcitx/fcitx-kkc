@@ -21,23 +21,35 @@
 #include <qplugin.h>
 #include <libintl.h>
 #include <fcitx-utils/utils.h>
+#include <glib-object.h>
+#include <libkkc/libkkc.h>
 #include "main.h"
-#include "configwidget.h"
+#include "dictwidget.h"
+#include "shortcutwidget.h"
 
 KkcConfigPlugin::KkcConfigPlugin(QObject* parent): FcitxQtConfigUIPlugin(parent)
 {
-
+#if !GLIB_CHECK_VERSION(2, 36, 0)
+    g_type_init();
+#endif
+    kkc_init();
 }
 
 FcitxQtConfigUIWidget* KkcConfigPlugin::create(const QString& key)
 {
-    Q_UNUSED(key);
-    return new KkcConfigWidget;
+    if (key == "kkc/dictionary_list") {
+        return new KkcDictWidget;
+    } else if (key == "kkc/rule") {
+        return new KkcShortcutWidget;
+    }
+    return NULL;
 }
 
 QStringList KkcConfigPlugin::files()
 {
-    return QStringList("kkc/dictionary");
+    QStringList fileList;
+    fileList << "kkc/dictionary_list" << "kkc/rule";
+    return fileList;
 }
 
 QString KkcConfigPlugin::name()

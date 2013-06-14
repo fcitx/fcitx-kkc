@@ -4,9 +4,6 @@ set(fcitx_kkc_sources
   kkc.c
   )
 
-include_directories(${LIBKKC_INCLUDE_DIRS})
-link_directories(${LIBKKC_LIBRARY_DIRS})
-
 # See document in FcitxMacro.cmake and the kkc .fxaddon file
 # doc/fcitx-kkc.fxaddon in the fcitx repo for more information.
 fcitx_add_addon_full(kkc
@@ -20,3 +17,7 @@ fcitx_add_addon_full(kkc
   # EXTRA_PO extra_files # extra files to translate
   LINK_LIBS ${LIBKKC_LIBRARIES} ${GLIB2_LIBRARIES}
   SOURCES ${fcitx_kkc_sources})
+
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/dictionary_list.in ${CMAKE_CURRENT_BINARY_DIR}/dictionary_list @ONLY)
+
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dictionary_list rule DESTINATION "${FCITX4_PREFIX}/share/fcitx/kkc")

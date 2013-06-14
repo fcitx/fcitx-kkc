@@ -17,30 +17,33 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FCITX_KKC_GUI_CONFIGWIDGET_H
-#define FCITX_KKC_GUI_CONFIGWIDGET_H
+#ifndef ADDSHORTCUTDIALOG_H
+#define ADDSHORTCUTDIALOG_H
 
-#include <fcitx-qt/fcitxqtconfiguiwidget.h>
+#include <QDialog>
+#include <QMap>
+#include "shortcutmodel.h"
 
 namespace Ui {
-class KkcConfigWidget;
+class AddShortcutDialog;
 }
 
-class KkcConfigWidget : public FcitxQtConfigUIWidget
+class AddShortcutDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit KkcConfigWidget(QWidget* parent = 0);
-    virtual ~KkcConfigWidget();
+    explicit AddShortcutDialog(QWidget* parent = 0);
+    virtual ~AddShortcutDialog();
 
-    virtual void load();
-    virtual void save();
-    virtual QString title();
-    virtual QString addon();
+    bool valid();
+    ShortcutEntry shortcut();
+public Q_SLOTS:
+    void keyChanged();
 
 private:
-    Ui::KkcConfigWidget* m_ui;
+    Ui::AddShortcutDialog* m_ui;
+    int m_length;
+    gchar** m_commands;
 };
 
-
-#endif // FCITX_KKC_GUI_CONFIGWIDGET_H
+#endif // ADDSHORTCUTDIALOG_H

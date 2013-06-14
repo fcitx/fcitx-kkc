@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2012~2012 by CSSlayer                                   *
+ *   Copyright (C) 2013~2013 by CSSlayer                                   *
  *   wengxt@gmail.com                                                      *
  *                                                                         *
  *  This program is free software: you can redistribute it and/or modify   *
@@ -17,14 +17,38 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef _COMMON_H_
-#define _COMMON_H_
+#ifndef FCITX_KKC_GUI_DICTWIDGET_H
+#define FCITX_KKC_GUI_DICTWIDGET_H
 
-#include <libintl.h>
+#include <fcitx-qt/fcitxqtconfiguiwidget.h>
 
-#define _(x) QString::fromUtf8(dgettext("fcitx-kkc", x))
+class DictModel;
+namespace Ui {
+class KkcDictWidget;
+}
 
-#define N_(X) (X)
-extern const char* modeName[];
+class KkcDictWidget : public FcitxQtConfigUIWidget
+{
+    Q_OBJECT
+public:
+    explicit KkcDictWidget(QWidget* parent = 0);
+    virtual ~KkcDictWidget();
 
-#endif // _COMMON_H_
+    virtual void load();
+    virtual void save();
+    virtual QString title();
+    virtual QString addon();
+
+private Q_SLOTS:
+    void addDictClicked();
+    void defaultDictClicked();
+    void removeDictClicked();
+    void moveUpDictClicked();
+    void moveDownClicked();
+private:
+    Ui::KkcDictWidget* m_ui;
+    DictModel* m_dictModel;
+};
+
+
+#endif // FCITX_KKC_GUI_DICTWIDGET_H

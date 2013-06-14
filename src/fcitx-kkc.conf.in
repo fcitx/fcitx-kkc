@@ -8,3 +8,4 @@ Library=fcitx-kkc.so
 Type=SharedLibrary
 Dependency=
 IMRegisterMethod=ConfigFile
+SubConfig=Dictionary:native:kkc/dictionary_list,Shortcut:native:kkc/rule

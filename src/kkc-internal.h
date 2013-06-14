@@ -50,6 +50,7 @@ typedef struct {
     KkcContext* context;
     FcitxUIMenu inputModeMenu;
     gulong handler;
+    FcitxMessages* tempMsg;
 } FcitxKkc;
 
 CONFIG_BINDING_DECLARE(FcitxKkcConfig);

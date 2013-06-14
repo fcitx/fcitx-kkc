@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.6)
 
 # The Project Name
 project(fcitx-kkc)
@@ -7,11 +7,11 @@ option(ENABLE_QT "Enable Qt for GUI configuration" On)
 
 include(FindPkgConfig)
 pkg_check_modules(LIBKKC "kkc-1.0>=0.2.3" REQUIRED)
-find_package(Fcitx 4.2.7 REQUIRED)
+find_package(Fcitx 4.2.8 REQUIRED)
 
 if (ENABLE_QT)
 find_package(Qt 4.8 REQUIRED)
-pkg_check_modules(FCITX_QT "fcitx-qt>=4.2.7" REQUIRED)
+pkg_check_modules(FCITX_QT "fcitx-qt>=4.2.8" REQUIRED)
 endif ()
 
 if (NOT SKK_DEFAULT_PATH)
@@ -25,6 +25,9 @@ include_directories(${FCITX4_FCITX_INCLUDE_DIRS})
 include_directories(${FCITX4_FCITX_CONFIG_INCLUDE_DIRS})
 include_directories(${FCITX4_FCITX_UTILS_INCLUDE_DIRS})
 include_directories("${PROJECT_BINARY_DIR}")
+include_directories(${LIBKKC_INCLUDE_DIRS})
+
+link_directories(${LIBKKC_LIBRARY_DIRS})
 
 set(CMAKE_C_FLAGS "-Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -fvisibility=hidden ${CMAKE_C_FLAGS}")
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -fvisibility=hidden ${CMAKE_CXX_FLAGS}")
@@ -39,5 +42,5 @@ configure_file(config.h.in config.h
 # related sources are processed.
 add_subdirectory(po)
 add_subdirectory(src)
-
 add_subdirectory(gui)
+add_subdirectory(data)

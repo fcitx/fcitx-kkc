@@ -17,37 +17,28 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "common.h"
-#include "configwidget.h"
-#include "ui_configwidget.h"
+#ifndef ADDDICTDIALOG_H
+#define ADDDICTDIALOG_H
 
-KkcConfigWidget::KkcConfigWidget(QWidget* parent): FcitxQtConfigUIWidget(parent)
-    ,m_ui(new Ui::KkcConfigWidget)
-{
-    m_ui->setupUi(this);
+#include <QDialog>
+#include <QMap>
+
+namespace Ui {
+class AddDictDialog;
 }
 
-KkcConfigWidget::~KkcConfigWidget()
+class AddDictDialog : public QDialog
 {
-    delete m_ui;
-}
+    Q_OBJECT
+public:
+    explicit AddDictDialog(QWidget* parent = 0);
+    virtual ~AddDictDialog();
+    QMap<QString, QString> dictionary();
 
-QString KkcConfigWidget::addon()
-{
-    return "fcitx-kkc";
-}
+private:
+    Ui::AddDictDialog* m_ui;
+public Q_SLOTS:
+    void browseClicked();
+};
 
-QString KkcConfigWidget::title()
-{
-    return _("Kana Kanji Configuration");
-}
-
-void KkcConfigWidget::load()
-{
-
-}
-
-void KkcConfigWidget::save()
-{
-
-}
+#endif // ADDDICTDIALOG_H

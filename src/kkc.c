@@ -45,6 +45,8 @@ static void FcitxKkcReloadConfig(void *arg);
 CONFIG_DEFINE_LOAD_AND_SAVE(Kkc, FcitxKkcConfig, "fcitx-kkc")
 DECLARE_ADDFUNCTIONS(Kkc)
 
+UT_icd dict_icd = { sizeof(void*), 0, 0, 0};
+
 #define _FcitxKeyState_Release (1 << 30)
 
 FCITX_DEFINE_PLUGIN(fcitx_kkc, ime2, FcitxIMClass2) = {
@@ -63,9 +65,12 @@ void FcitxKkcResetIM(void *arg); /**< FcitxIMResetIM */
 INPUT_RETURN_VALUE FcitxKkcDoInput(void *arg, FcitxKeySym, unsigned int); /**< FcitxIMDoInput */
 INPUT_RETURN_VALUE FcitxKkcDoReleaseInput(void *arg, FcitxKeySym, unsigned int); /**< FcitxIMDoInput */
 INPUT_RETURN_VALUE FcitxKkcGetCandWords(void *arg); /**< FcitxIMGetCandWords */
+void FcitxKkcOnClose(void* arg, FcitxIMCloseEventType event);
 void FcitxKkcSave(void *arg); /**< FcitxIMSave */
 void FcitxKkcApplyConfig(FcitxKkc* kkc);
 void FcitxKkcResetHook(void *arg);
+boolean FcitxKkcLoadDictionary(FcitxKkc* kkc);
+boolean FcitxKkcLoadRule(FcitxKkc* kkc);
 
 typedef struct _KkcStatus {
     const char* icon;
@@ -77,7 +82,7 @@ KkcStatus input_mode_status[] = {
     {"",  "\xe3\x81\x82", N_("Hiragana") },
     {"", "\xe3\x82\xa2", N_("Katakana") },
     {"", "\xef\xbd\xb1", N_("Half width Katakana") },
-    {"", "A", N_("Direct input") },
+    {"", "A", N_("Latin") },
     {"", "\xef\xbc\xa1", N_("Wide latin") },
 };
 
@@ -140,24 +145,22 @@ FcitxKkcCreate(FcitxInstance *instance)
 
     kkc->model = model;
     kkc->context = kkc_context_new(model);
-    KkcDictionaryList* dictionaries = kkc_context_get_dictionaries(kkc->context);
-    KkcSystemSegmentDictionary* dict = kkc_system_segment_dictionary_new("/usr/share/skk/SKK-JISYO.L", "EUC-JP", NULL);
-    char* path = NULL;
-    FcitxXDGGetFileUserWithPrefix("kkc", "dictionary", NULL, &path);
-    KkcUserDictionary* userdict = kkc_user_dictionary_new(path, NULL);
-    kkc_dictionary_list_add(dictionaries, KKC_DICTIONARY(dict));
-    kkc_dictionary_list_add(dictionaries, KKC_DICTIONARY(userdict));
+
+    if (!FcitxKkcLoadDictionary(kkc) || !FcitxKkcLoadRule(kkc)) {
+        g_object_unref(kkc->context);
+        free(kkc);
+        return NULL;
+    }
     kkc_context_set_punctuation_style(kkc->context, KKC_PUNCTUATION_STYLE_JA_JA);
     kkc_context_set_input_mode(kkc->context, KKC_INPUT_MODE_HIRAGANA);
-
-    KkcRule* rule = kkc_rule_new(kkc_rule_metadata_find("default"), NULL);
-
-    kkc_context_set_typing_rule(kkc->context, rule);
 
     if (!KkcLoadConfig(&kkc->config)) {
         free(kkc);
         return NULL;
     }
+
+    kkc->tempMsg = FcitxMessagesNew();
+
 
     FcitxKkcApplyConfig(kkc);
 
@@ -169,6 +172,7 @@ FcitxKkcCreate(FcitxInstance *instance)
     iface.GetCandWords = FcitxKkcGetCandWords;
     iface.Save = FcitxKkcSave;
     iface.ResetIM = FcitxKkcResetIM;
+    iface.OnClose = FcitxKkcOnClose;
 
     FcitxInstanceRegisterIMv2(instance, kkc, "kkc", _("Kana Kanji"), "kkc", iface, 1, "ja");
 
@@ -196,7 +200,7 @@ FcitxKkcCreate(FcitxInstance *instance)
         FcitxUISetStatusVisable(instance, STATUS_NAME, false); \
     } while(0)
 
-    INIT_MENU(kkc->inputModeMenu, InputMode, _("Input Mode"), "kkc-input-mode", input_mode_status, KKC_INPUT_MODE_DIRECT + 1);
+    INIT_MENU(kkc->inputModeMenu, InputMode, _("Input Mode"), "kkc-input-mode", input_mode_status, KKC_INPUT_MODE_DIRECT);
 
     kkc->handler = g_signal_connect(kkc->context, "notify::input-mode", G_CALLBACK(_kkc_input_mode_changed_cb), kkc);
     FcitxKkcUpdateInputMode(kkc);
@@ -361,12 +365,14 @@ INPUT_RETURN_VALUE FcitxKkcGetCandWords(void* arg)
         }
     } else {
         gchar* str = kkc_context_get_input(kkc->context);
-        FcitxMessagesAddMessageAtLast(message, MSG_INPUT, "%s", str);
+        if (str && str[0]) {
+            FcitxMessagesAddMessageAtLast(message, MSG_INPUT, "%s", str);
 
-        if (message == clientPreedit) {
-            FcitxInputStateSetClientCursorPos(input, strlen(str));
-        } else {
-            FcitxInputStateSetCursorPos(input, strlen(str));
+            if (message == clientPreedit) {
+                FcitxInputStateSetClientCursorPos(input, strlen(str));
+            } else {
+                FcitxInputStateSetCursorPos(input, strlen(str));
+            }
         }
         g_free(str);
     }
@@ -426,6 +432,41 @@ void FcitxKkcResetIM(void* arg)
     kkc_context_reset(kkc->context);
 }
 
+void FcitxKkcOnClose(void* arg, FcitxIMCloseEventType event)
+{
+    FcitxKkc *kkc = (FcitxKkc*)arg;
+    if (event == CET_LostFocus) {
+        // TODO
+    } else if (event == CET_ChangeByUser) {
+        kkc_context_reset(kkc->context);
+    } else if (event == CET_ChangeByInactivate) {
+        KkcSegmentList* segments = kkc_context_get_segments(kkc->context);
+        FcitxGlobalConfig* config = FcitxInstanceGetGlobalConfig(kkc->owner);
+        if (config->bSendTextWhenSwitchEng) {
+            FcitxMessagesSetMessageCount(kkc->tempMsg, 0);
+            if (kkc_segment_list_get_cursor_pos(segments) >= 0) {
+                int i = 0;
+                for (i = 0; i < kkc_segment_list_get_size(segments); i ++) {
+                    KkcSegment* segment = kkc_segment_list_get(segments, i);
+                    const gchar* str = kkc_segment_get_output(segment);
+                    FcitxMessagesAddMessageAtLast(kkc->tempMsg, MSG_INPUT, "%s", str);
+                }
+            } else {
+                gchar* str = kkc_context_get_input(kkc->context);
+                FcitxMessagesAddMessageAtLast(kkc->tempMsg, MSG_INPUT, "%s", str);
+                g_free(str);
+            }
+            if (FcitxMessagesGetMessageCount(kkc->tempMsg) > 0) {
+                char* commit = FcitxUIMessagesToCString(kkc->tempMsg);
+                FcitxInstanceCommitString(kkc->owner, FcitxInstanceGetCurrentIC(kkc->owner), commit);
+                free(commit);
+            }
+        }
+        kkc_context_reset(kkc->context);
+    }
+}
+
+
 void FcitxKkcSave(void* arg)
 {
     FcitxKkc *kkc = (FcitxKkc*)arg;
@@ -442,6 +483,8 @@ FcitxKkcDestroy(void *arg)
     g_signal_handler_disconnect(kkc->context, kkc->handler);
     g_object_unref(kkc->context);
 
+    free(kkc->tempMsg);
+
     free(kkc);
 }
 
@@ -451,6 +494,8 @@ FcitxKkcReloadConfig(void *arg)
     FcitxKkc *kkc = (FcitxKkc*)arg;
     KkcLoadConfig(&kkc->config);
     FcitxKkcApplyConfig(kkc);
+    FcitxKkcLoadDictionary(kkc);
+    FcitxKkcLoadRule(kkc);
 }
 
 void FcitxKkcApplyConfig(FcitxKkc* kkc)
@@ -473,5 +518,144 @@ void FcitxKkcResetHook(void *arg)
 
     RESET_STATUS("kkc-input-mode")
 }
+
+boolean FcitxKkcLoadDictionary(FcitxKkc* kkc)
+{
+    FILE* fp = FcitxXDGGetFileWithPrefix("kkc", "dictionary_list", "r", NULL);
+    if (!fp) {
+        return false;
+    }
+
+    UT_array dictionaries;
+    utarray_init(&dictionaries, &dict_icd);
+
+    char *buf = NULL;
+    size_t len = 0;
+    char *trimmed = NULL;
+
+    while (getline(&buf, &len, fp) != -1) {
+        if (trimmed)
+            free(trimmed);
+        trimmed = fcitx_utils_trim(buf);
+
+        UT_array* list = fcitx_utils_split_string(trimmed, ',');
+        do {
+            if (utarray_len(list) < 3) {
+                break;
+            }
+            boolean typeFile = false;
+            char* path = NULL;
+            int mode = 0;
+            utarray_foreach(item, list, char*) {
+                char* key = *item;
+                char* value = strchr(*item, '=');
+                if (!value)
+                    continue;
+                *value = '\0';
+                value++;
+
+                if (strcmp(key, "type") == 0) {
+                    if (strcmp(value, "file") == 0) {
+                        typeFile = true;
+                    }
+                } else if (strcmp(key, "file") == 0) {
+                    path = value;
+                } else if (strcmp(key, "mode") == 0) {
+                    if (strcmp(value, "readonly") == 0) {
+                        mode = 1;
+                    } else if (strcmp(value, "readwrite") == 0) {
+                        mode = 2;
+                    }
+                }
+            }
+
+            if (mode == 0 || path == NULL || !typeFile) {
+                break;
+            }
+
+            if (mode == 1) {
+                KkcSystemSegmentDictionary* dict = kkc_system_segment_dictionary_new(path, "EUC-JP", NULL);
+                utarray_push_back(&dictionaries, &dict);
+            } else {
+                char* needfree = NULL;
+                char* realpath = NULL;
+                if (strncmp(path, "$FCITX_CONFIG_DIR/", strlen("$FCITX_CONFIG_DIR/")) == 0) {
+                    FcitxXDGGetFileUserWithPrefix("", path + strlen("$FCITX_CONFIG_DIR/"), NULL, &needfree);
+                    realpath = needfree;
+                } else {
+                    realpath = path;
+                }
+                KkcUserDictionary* userdict = kkc_user_dictionary_new(realpath, NULL);
+                if (needfree) {
+                    free(needfree);
+                }
+                utarray_push_back(&dictionaries, &userdict);
+            }
+        } while(0);
+        fcitx_utils_free_string_list(list);
+    }
+
+    if (buf)
+        free(buf);
+    if (trimmed)
+        free(trimmed);
+
+    boolean result = false;
+    if (utarray_len(&dictionaries) != 0) {
+        result = true;
+        KkcDictionaryList* kkcdicts = kkc_context_get_dictionaries(kkc->context);
+        kkc_dictionary_list_clear(kkcdicts);
+        utarray_foreach(dict, &dictionaries, KkcDictionary*) {
+            kkc_dictionary_list_add(kkcdicts, KKC_DICTIONARY(*dict));
+        }
+    }
+
+    utarray_done(&dictionaries);
+    return result;
+}
+
+boolean FcitxKkcLoadRule(FcitxKkc* kkc)
+{
+    FILE* fp = FcitxXDGGetFileWithPrefix("kkc", "rule", "r", NULL);
+    KkcRuleMetadata* meta = NULL;
+
+    do {
+        if (!fp) {
+            break;
+        }
+
+        char* line = NULL;
+        size_t bufsize = 0;
+        getline(&line, &bufsize, fp);
+        fclose(fp);
+
+        if (!line) {
+            break;
+        }
+
+        char* trimmed = fcitx_utils_trim(line);
+        meta = kkc_rule_metadata_find(trimmed);
+        free(trimmed);
+        free(line);
+    } while(0);
+
+    if (!meta) {
+        meta = kkc_rule_metadata_find("default");
+        if (!meta) {
+            return false;
+        }
+    }
+
+    char* fcitxBasePath = NULL;
+    FcitxXDGGetFileUserWithPrefix("kkc", "rules", NULL, &fcitxBasePath);
+    KkcUserRule* userRule = kkc_user_rule_new(meta, fcitxBasePath, "fcitx-kkc", NULL);
+    if (!userRule) {
+        return false;
+    }
+
+    kkc_context_set_typing_rule(kkc->context, KKC_RULE(userRule));
+    return true;
+}
+
 
 #include "fcitx-kkc-addfunctions.h"
