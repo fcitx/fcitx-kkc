@@ -8,15 +8,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-09 00:02-0400\n"
-"PO-Revision-Date: 2013-04-23 06:39+0000\n"
-"Last-Translator: young0512 <cynthia.young0512@gmail.com>\n"
+"POT-Creation-Date: 2013-06-14 18:02-0400\n"
+"PO-Revision-Date: 2013-06-09 04:08+0000\n"
+"Last-Translator: Xuetian Weng <wengxt@gmail.com>\n"
 "Language-Team: Chinese (China) <fcitx-dev@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: gui/addshortcutdialog.cpp:13
+msgid "&Command"
+msgstr ""
+
+#: gui/addshortcutdialog.cpp:12
+#, fuzzy
+msgid "&Input Mode"
+msgstr "输入模式"
+
+#: gui/addshortcutdialog.cpp:14
+msgid "&Key"
+msgstr ""
+
+#: gui/adddictdialog.cpp:17
+msgid "&Path:"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:37
+msgid "&Rule:"
+msgstr ""
+
+#: gui/adddictdialog.cpp:16
+msgid "&Text:"
+msgstr ""
 
 #: src/fcitx-kkc.desc:31
 msgid "Candidate List Layout"
@@ -38,9 +63,17 @@ msgstr "光标向下"
 msgid "Cursor Up"
 msgstr "光标向上"
 
-#: src/kkc.c:80 src/fcitx-kkc.desc:19
+#: src/fcitx-kkc.conf.in:11
+msgid "Dictionary"
+msgstr ""
+
+#: src/fcitx-kkc.desc:19
 msgid "Direct input"
 msgstr "直接输入"
+
+#: gui/shortcutmodel.cpp:75
+msgid "Function"
+msgstr ""
 
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
@@ -53,11 +86,11 @@ msgstr "常规"
 msgid "Global"
 msgstr "全局"
 
-#: src/kkc.c:79 src/fcitx-kkc.desc:18
+#: gui/shortcutmodel.cpp:31 src/kkc.c:84 src/fcitx-kkc.desc:18
 msgid "Half width Katakana"
 msgstr "半角片假名"
 
-#: src/kkc.c:77 src/fcitx-kkc.desc:16
+#: gui/shortcutmodel.cpp:29 src/kkc.c:82 src/fcitx-kkc.desc:16
 msgid "Hiragana"
 msgstr "平假名"
 
@@ -69,7 +102,7 @@ msgstr "横向"
 msgid "Initial Input Mode"
 msgstr "初始输入模式"
 
-#: src/kkc.c:199
+#: gui/shortcutmodel.cpp:71 src/kkc.c:203
 msgid "Input Mode"
 msgstr "输入模式"
 
@@ -77,23 +110,39 @@ msgstr "输入模式"
 msgid "Japanese"
 msgstr "日语"
 
-#: src/kkc.c:173 src/kkc.conf.in:3
+#: src/kkc.c:177 src/kkc.conf.in:3
 msgid "Kana Kanji"
 msgstr "假名汉字"
 
-#: gui/configwidget.cpp:42
-msgid "Kana Kanji Configuration"
+#: gui/dictwidget.cpp:56
+msgid "Kana Kanji Dictionary Manager"
 msgstr ""
 
-#: src/kkc.c:78 src/fcitx-kkc.desc:17
+#: gui/shortcutwidget.cpp:117
+msgid "Kana Kanji Shortcut Manager"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:30 src/kkc.c:83 src/fcitx-kkc.desc:17
 msgid "Katakana"
 msgstr "片假名"
+
+#: gui/shortcutmodel.cpp:73
+msgid "Key"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:150
+msgid "Key Conflict"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:150
+msgid "Key to add is conflict with existing shortcut."
+msgstr ""
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
 msgstr "Fcitx 的 Kkc 组件"
 
-#: src/fcitx-kkc.desc:7
+#: gui/shortcutmodel.cpp:32 src/kkc.c:85 src/fcitx-kkc.desc:7
 msgid "Latin"
 msgstr "拉丁语"
 
@@ -109,19 +158,50 @@ msgstr "页面大小"
 msgid "Punctuation Style"
 msgstr "标点风格"
 
+#: gui/shortcutwidget.cpp:125
+msgid "Save Changes"
+msgstr ""
+
+#: gui/adddictdialog.cpp:72
+msgid "Select Dictionary Directory"
+msgstr ""
+
+#: gui/adddictdialog.cpp:58
+msgid "Select Dictionary File"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Shortcut"
+msgstr ""
+
 #: src/fcitx-kkc.desc:67
 msgid "Show Annotation"
 msgstr "显示注释"
+
+#: gui/adddictdialog.cpp:18
+msgid "System"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:126
+msgid ""
+"The content has changed.\n"
+"Do you want to save the changes or discard them?"
+msgstr ""
 
 #: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
 msgstr "这是一个简单的 Fcitx 模块的模板"
 
+#: gui/adddictdialog.cpp:19
+msgid "User"
+msgstr ""
+
 #: src/fcitx-kkc.desc:34
 msgid "Vertical"
 msgstr "纵向"
 
-#: src/kkc.c:81 src/fcitx-kkc.desc:8 src/fcitx-kkc.desc:20
+#: gui/shortcutmodel.cpp:33 src/kkc.c:86 src/fcitx-kkc.desc:8
+#: src/fcitx-kkc.desc:20
 msgid "Wide latin"
 msgstr "全角英文"
 
