@@ -4,12 +4,13 @@
 #
 # Translators:
 # young0512 <cynthia.young0512@gmail.com>, 2013
+# Xuetian Weng <wengxt@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-14 20:02-0400\n"
-"PO-Revision-Date: 2013-06-14 22:08+0000\n"
+"POT-Creation-Date: 2013-06-14 22:02-0400\n"
+"PO-Revision-Date: 2013-06-15 00:30+0000\n"
 "Last-Translator: Xuetian Weng <wengxt@gmail.com>\n"
 "Language-Team: Chinese (China) <fcitx-dev@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -20,27 +21,27 @@ msgstr ""
 
 #: gui/addshortcutdialog.cpp:13
 msgid "&Command"
-msgstr ""
+msgstr "命令(&C)"
 
 #: gui/addshortcutdialog.cpp:12
 msgid "&Input Mode"
-msgstr ""
+msgstr "输入模式(&I)"
 
 #: gui/addshortcutdialog.cpp:14
 msgid "&Key"
-msgstr ""
+msgstr "按键(&K)"
 
 #: gui/adddictdialog.cpp:17
 msgid "&Path:"
-msgstr ""
+msgstr "路径(&P):"
 
 #: gui/shortcutwidget.cpp:37
 msgid "&Rule:"
-msgstr ""
+msgstr "按键方案(&R):"
 
 #: gui/adddictdialog.cpp:16
 msgid "&Text:"
-msgstr ""
+msgstr "文本(&T):"
 
 #: src/fcitx-kkc.desc:31
 msgid "Candidate List Layout"
@@ -64,7 +65,7 @@ msgstr "光标向上"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Dictionary"
-msgstr ""
+msgstr "词典"
 
 #: src/fcitx-kkc.desc:19
 msgid "Direct input"
@@ -72,7 +73,7 @@ msgstr "直接输入"
 
 #: gui/shortcutmodel.cpp:75
 msgid "Function"
-msgstr ""
+msgstr "功能"
 
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
@@ -115,11 +116,11 @@ msgstr "假名汉字"
 
 #: gui/dictwidget.cpp:56
 msgid "Kana Kanji Dictionary Manager"
-msgstr ""
+msgstr "假名汉字词典管理器"
 
 #: gui/shortcutwidget.cpp:117
 msgid "Kana Kanji Shortcut Manager"
-msgstr ""
+msgstr "假名汉字快捷键管理器"
 
 #: gui/shortcutmodel.cpp:30 src/kkc.c:83 src/fcitx-kkc.desc:17
 msgid "Katakana"
@@ -127,15 +128,15 @@ msgstr "片假名"
 
 #: gui/shortcutmodel.cpp:73
 msgid "Key"
-msgstr ""
+msgstr "按键"
 
 #: gui/shortcutwidget.cpp:150
 msgid "Key Conflict"
-msgstr ""
+msgstr "按键冲突"
 
 #: gui/shortcutwidget.cpp:150
 msgid "Key to add is conflict with existing shortcut."
-msgstr ""
+msgstr "要添加的按键和已存在的快捷键冲突。"
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
@@ -159,19 +160,19 @@ msgstr "标点风格"
 
 #: gui/shortcutwidget.cpp:125
 msgid "Save Changes"
-msgstr ""
+msgstr "保存更改"
 
 #: gui/adddictdialog.cpp:72
 msgid "Select Dictionary Directory"
-msgstr ""
+msgstr "选择词典目录"
 
 #: gui/adddictdialog.cpp:58
 msgid "Select Dictionary File"
-msgstr ""
+msgstr "选择词典文件"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Shortcut"
-msgstr ""
+msgstr "快捷键"
 
 #: src/fcitx-kkc.desc:67
 msgid "Show Annotation"
@@ -179,13 +180,15 @@ msgstr "显示注释"
 
 #: gui/adddictdialog.cpp:18
 msgid "System"
-msgstr ""
+msgstr "系统"
 
 #: gui/shortcutwidget.cpp:126
 msgid ""
 "The content has changed.\n"
 "Do you want to save the changes or discard them?"
 msgstr ""
+"内容已更改。\n"
+"您想要保存还是撤销这些修改？"
 
 #: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
@@ -193,7 +196,7 @@ msgstr "这是一个简单的 Fcitx 模块的模板"
 
 #: gui/adddictdialog.cpp:19
 msgid "User"
-msgstr ""
+msgstr "用户"
 
 #: src/fcitx-kkc.desc:34
 msgid "Vertical"
