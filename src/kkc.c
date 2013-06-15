@@ -504,6 +504,7 @@ void FcitxKkcApplyConfig(FcitxKkc* kkc)
     kkc_candidate_list_set_page_start(kkcCandidates, kkc->config.nTriggersToShowCandWin);
     kkc_candidate_list_set_page_size(kkcCandidates, kkc->config.pageSize);
     kkc_context_set_punctuation_style(kkc->context, kkc->config.punctuationStyle);
+    kkc_context_set_auto_correct(kkc->context, kkc->config.autoCorrect);
 }
 
 void FcitxKkcResetHook(void *arg)

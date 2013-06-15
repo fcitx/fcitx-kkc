@@ -35,6 +35,7 @@ typedef struct {
     KkcInputMode initialInputMode;
     FcitxCandidateLayoutHint candidateLayout;
     int nTriggersToShowCandWin;
+    boolean autoCorrect;
     int pageSize;
     FcitxHotkey prevPageKey[2];
     FcitxHotkey nextPageKey[2];

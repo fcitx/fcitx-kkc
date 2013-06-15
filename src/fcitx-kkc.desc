@@ -42,6 +42,11 @@ DefaultValue=0
 Min=0
 Max=7
 
+[General/AutoCorrect]
+Type=Boolean
+Description=Auto correct input sequence
+DefaultValue=True
+
 [General/CandidatesPageUpKey]
 Type=Hotkey
 Description=Candidates Page Up
