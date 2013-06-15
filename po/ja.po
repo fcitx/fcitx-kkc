@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-14 18:02-0400\n"
-"PO-Revision-Date: 2013-06-09 04:08+0000\n"
+"POT-Creation-Date: 2013-06-14 20:02-0400\n"
+"PO-Revision-Date: 2013-06-14 22:08+0000\n"
 "Last-Translator: Xuetian Weng <wengxt@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/"
 "ja/)\n"
@@ -24,9 +24,8 @@ msgid "&Command"
 msgstr ""
 
 #: gui/addshortcutdialog.cpp:12
-#, fuzzy
 msgid "&Input Mode"
-msgstr "入力モード"
+msgstr ""
 
 #: gui/addshortcutdialog.cpp:14
 msgid "&Key"
