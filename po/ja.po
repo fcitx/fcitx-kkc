@@ -4,13 +4,14 @@
 #
 # Translators:
 # しろう, 2013
+# しろう, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-14 20:02-0400\n"
-"PO-Revision-Date: 2013-06-14 22:08+0000\n"
-"Last-Translator: Xuetian Weng <wengxt@gmail.com>\n"
+"POT-Creation-Date: 2013-06-15 12:02-0400\n"
+"PO-Revision-Date: 2013-06-15 15:56+0000\n"
+"Last-Translator: いくや あわしろ <ikunya@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/"
 "ja/)\n"
 "Language: ja\n"
@@ -21,27 +22,27 @@ msgstr ""
 
 #: gui/addshortcutdialog.cpp:13
 msgid "&Command"
-msgstr ""
+msgstr "コマンド(&C)"
 
 #: gui/addshortcutdialog.cpp:12
 msgid "&Input Mode"
-msgstr ""
+msgstr "入力モード(&I)"
 
 #: gui/addshortcutdialog.cpp:14
 msgid "&Key"
-msgstr ""
+msgstr "キー(&K)"
 
 #: gui/adddictdialog.cpp:17
 msgid "&Path:"
-msgstr ""
+msgstr "パス(&P):"
 
 #: gui/shortcutwidget.cpp:37
 msgid "&Rule:"
-msgstr ""
+msgstr "ルール(&R):"
 
 #: gui/adddictdialog.cpp:16
 msgid "&Text:"
-msgstr ""
+msgstr "テキスト(&T):"
 
 #: src/fcitx-kkc.desc:31
 msgid "Candidate List Layout"
@@ -65,7 +66,7 @@ msgstr "カーソルを上に"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Dictionary"
-msgstr ""
+msgstr "辞書"
 
 #: src/fcitx-kkc.desc:19
 msgid "Direct input"
@@ -73,7 +74,7 @@ msgstr "直接入力"
 
 #: gui/shortcutmodel.cpp:75
 msgid "Function"
-msgstr ""
+msgstr "ファンクション"
 
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
@@ -96,7 +97,7 @@ msgstr "ひらがな"
 
 #: src/fcitx-kkc.desc:35
 msgid "Horizontal"
-msgstr "水平"
+msgstr "横"
 
 #: src/fcitx-kkc.desc:13
 msgid "Initial Input Mode"
@@ -116,11 +117,11 @@ msgstr "かな漢字"
 
 #: gui/dictwidget.cpp:56
 msgid "Kana Kanji Dictionary Manager"
-msgstr ""
+msgstr "かな漢字辞書マネージャー"
 
 #: gui/shortcutwidget.cpp:117
 msgid "Kana Kanji Shortcut Manager"
-msgstr ""
+msgstr "かな漢字ショートカットマネージャー"
 
 #: gui/shortcutmodel.cpp:30 src/kkc.c:83 src/fcitx-kkc.desc:17
 msgid "Katakana"
@@ -128,15 +129,15 @@ msgstr "カタカナ"
 
 #: gui/shortcutmodel.cpp:73
 msgid "Key"
-msgstr ""
+msgstr "キー"
 
 #: gui/shortcutwidget.cpp:150
 msgid "Key Conflict"
-msgstr ""
+msgstr "競合するキー"
 
 #: gui/shortcutwidget.cpp:150
 msgid "Key to add is conflict with existing shortcut."
-msgstr ""
+msgstr "追加したキーは存在するするショートカットキーと競合しています。"
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
@@ -160,33 +161,35 @@ msgstr "句読点スタイル"
 
 #: gui/shortcutwidget.cpp:125
 msgid "Save Changes"
-msgstr ""
+msgstr "変更を保存"
 
 #: gui/adddictdialog.cpp:72
 msgid "Select Dictionary Directory"
-msgstr ""
+msgstr "辞書のディレクトリを選択"
 
 #: gui/adddictdialog.cpp:58
 msgid "Select Dictionary File"
-msgstr ""
+msgstr "辞書のファイルを選択"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Shortcut"
-msgstr ""
+msgstr "ショートカット"
 
 #: src/fcitx-kkc.desc:67
 msgid "Show Annotation"
-msgstr ""
+msgstr "注釈を表示"
 
 #: gui/adddictdialog.cpp:18
 msgid "System"
-msgstr ""
+msgstr "システム"
 
 #: gui/shortcutwidget.cpp:126
 msgid ""
 "The content has changed.\n"
 "Do you want to save the changes or discard them?"
 msgstr ""
+"内容が変更されました。\n"
+"変更を保存しますか？　それとも破棄しますか？"
 
 #: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
@@ -194,11 +197,11 @@ msgstr "これは簡単な Fcitx モジュールのテンプレートです。"
 
 #: gui/adddictdialog.cpp:19
 msgid "User"
-msgstr ""
+msgstr "ユーザー"
 
 #: src/fcitx-kkc.desc:34
 msgid "Vertical"
-msgstr "垂直"
+msgstr "縦"
 
 #: gui/shortcutmodel.cpp:33 src/kkc.c:86 src/fcitx-kkc.desc:8
 #: src/fcitx-kkc.desc:20
