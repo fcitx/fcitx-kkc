@@ -40,6 +40,7 @@ public:
     virtual void save();
     virtual QString title();
     virtual QString addon();
+    virtual QString icon();
 public Q_SLOTS:
     void ruleChanged(int);
     void addShortcutClicked();

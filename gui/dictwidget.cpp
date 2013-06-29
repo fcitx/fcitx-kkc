@@ -53,7 +53,12 @@ QString KkcDictWidget::addon()
 
 QString KkcDictWidget::title()
 {
-    return _("Kana Kanji Dictionary Manager");
+    return _("Dictionary Manager");
+}
+
+QString KkcDictWidget::icon()
+{
+    return "fcitx-kkc";
 }
 
 void KkcDictWidget::load()

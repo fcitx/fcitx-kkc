@@ -59,7 +59,7 @@ QString KkcConfigPlugin::name()
 
 QString KkcConfigPlugin::domain()
 {
-    return "fcitx";
+    return "fcitx-kkc";
 }
 
 

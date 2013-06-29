@@ -114,7 +114,12 @@ void KkcShortcutWidget::save()
 
 QString KkcShortcutWidget::title()
 {
-    return _("Kana Kanji Shortcut Manager");
+    return _("Shortcut Manager");
+}
+
+QString KkcShortcutWidget::icon()
+{
+    return "fcitx-kkc";
 }
 
 void KkcShortcutWidget::ruleChanged(int rule)

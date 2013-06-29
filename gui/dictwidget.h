@@ -38,6 +38,7 @@ public:
     virtual void save();
     virtual QString title();
     virtual QString addon();
+    virtual QString icon();
 
 private Q_SLOTS:
     void addDictClicked();
