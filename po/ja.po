@@ -112,8 +112,8 @@ msgid "Japanese"
 msgstr "日本語"
 
 #: src/kkc.c:177 src/kkc.conf.in:3
-msgid "Kana Kanji"
-msgstr "かな漢字"
+msgid "Kana Kanji Converter"
+msgstr "かな漢字変換器"
 
 #: gui/dictwidget.cpp:56
 msgid "Kana Kanji Dictionary Manager"
