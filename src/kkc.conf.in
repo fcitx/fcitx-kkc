@@ -1,6 +1,6 @@
 [InputMethod]
 UniqueName=kkc
-_Name=Kana Kanji
+_Name=Kana Kanji Converter
 IconName=kkc
 Priority=1
 LangCode=ja

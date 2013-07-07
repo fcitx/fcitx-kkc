@@ -117,7 +117,7 @@ msgid "Key to add is conflict with existing shortcut."
 msgstr ""
 
 #: src/kkc.c:177 src/kkc.conf.in:3
-msgid "Kana Kanji"
+msgid "Kana Kanji Converter"
 msgstr ""
 
 #: src/fcitx-kkc.conf.in:3

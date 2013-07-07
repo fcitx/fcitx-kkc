@@ -174,7 +174,7 @@ FcitxKkcCreate(FcitxInstance *instance)
     iface.ResetIM = FcitxKkcResetIM;
     iface.OnClose = FcitxKkcOnClose;
 
-    FcitxInstanceRegisterIMv2(instance, kkc, "kkc", _("Kana Kanji"), "kkc", iface, 1, "ja");
+    FcitxInstanceRegisterIMv2(instance, kkc, "kkc", _("Kana Kanji Converter"), "kkc", iface, 1, "ja");
 
 
 #define INIT_MENU(VARNAME, NAME, I18NNAME, STATUS_NAME, STATUS_ARRAY, SIZE) \
