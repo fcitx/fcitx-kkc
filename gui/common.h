@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2012~2012 by CSSlayer                                   *
+ *   Copyright (C) 2013~2013 by CSSlayer                                   *
  *   wengxt@gmail.com                                                      *
  *                                                                         *
  *  This program is free software: you can redistribute it and/or modify   *
