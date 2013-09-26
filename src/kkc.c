@@ -126,6 +126,7 @@ FcitxKkcCreate(FcitxInstance *instance)
 {
     FcitxKkc *kkc = fcitx_utils_new(FcitxKkc);
     bindtextdomain("fcitx-kkc", LOCALEDIR);
+    bind_textdomain_codeset("fcitx-kkc", "UTF-8");
     kkc->owner = instance;
 
 #if !GLIB_CHECK_VERSION(2, 36, 0)
