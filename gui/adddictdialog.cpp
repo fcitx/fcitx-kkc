@@ -32,7 +32,7 @@ AddDictDialog::AddDictDialog(QWidget* parent): QDialog(parent)
     ,m_ui(new Ui::AddDictDialog)
 {
     m_ui->setupUi(this);
-    m_ui->typeLabel->setText(_("&Text:"));
+    m_ui->typeLabel->setText(_("&Type:"));
     m_ui->pathLabel->setText(_("&Path:"));
     m_ui->typeComboBox->addItem(_("System"));
     m_ui->typeComboBox->addItem(_("User"));

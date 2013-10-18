@@ -102,6 +102,7 @@ void DictModel::load(QFile& file)
 bool DictModel::save()
 {
     char* name = NULL;
+    FcitxXDGMakeDirUser("kkc");
     FcitxXDGGetFileUserWithPrefix("kkc", "dictionary_list", NULL, &name);
     QString fileName = QString::fromLocal8Bit(name);
     QTemporaryFile tempFile(fileName);
