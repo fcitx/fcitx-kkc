@@ -576,7 +576,9 @@ boolean FcitxKkcLoadDictionary(FcitxKkc* kkc)
 
             if (mode == 1) {
                 KkcSystemSegmentDictionary* dict = kkc_system_segment_dictionary_new(path, "EUC-JP", NULL);
-                utarray_push_back(&dictionaries, &dict);
+                if (dict) {
+                    utarray_push_back(&dictionaries, &dict);
+                }
             } else {
                 char* needfree = NULL;
                 char* realpath = NULL;
@@ -590,7 +592,9 @@ boolean FcitxKkcLoadDictionary(FcitxKkc* kkc)
                 if (needfree) {
                     free(needfree);
                 }
-                utarray_push_back(&dictionaries, &userdict);
+                if (userdict) {
+                    utarray_push_back(&dictionaries, &userdict);
+                }
             }
         } while(0);
         fcitx_utils_free_string_list(list);
