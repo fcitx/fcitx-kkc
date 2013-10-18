@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-06-14 18:02-0400\n"
+"POT-Creation-Date: 2013-10-18 03:13-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,76 +17,76 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gui/adddictdialog.cpp:16
-msgid "&Text:"
+#: gui/adddictdialog.cpp:35
+msgid "&Type:"
 msgstr ""
 
-#: gui/adddictdialog.cpp:17
+#: gui/adddictdialog.cpp:36
 msgid "&Path:"
 msgstr ""
 
-#: gui/adddictdialog.cpp:18
+#: gui/adddictdialog.cpp:37
 msgid "System"
 msgstr ""
 
-#: gui/adddictdialog.cpp:19
+#: gui/adddictdialog.cpp:38
 msgid "User"
 msgstr ""
 
-#: gui/adddictdialog.cpp:58
+#: gui/adddictdialog.cpp:77
 msgid "Select Dictionary File"
 msgstr ""
 
-#: gui/adddictdialog.cpp:72
+#: gui/adddictdialog.cpp:91
 msgid "Select Dictionary Directory"
 msgstr ""
 
-#: gui/addshortcutdialog.cpp:12
+#: gui/addshortcutdialog.cpp:31
 msgid "&Input Mode"
 msgstr ""
 
-#: gui/addshortcutdialog.cpp:13
+#: gui/addshortcutdialog.cpp:32
 msgid "&Command"
 msgstr ""
 
-#: gui/addshortcutdialog.cpp:14
+#: gui/addshortcutdialog.cpp:33
 msgid "&Key"
 msgstr ""
 
 #: gui/dictwidget.cpp:56
-msgid "Kana Kanji Dictionary Manager"
+msgid "Dictionary Manager"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:29 src/kkc.c:82 src/fcitx-kkc.desc:16
+#: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
 msgid "Hiragana"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:30 src/kkc.c:83 src/fcitx-kkc.desc:17
+#: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
 msgid "Katakana"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:31 src/kkc.c:84 src/fcitx-kkc.desc:18
+#: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
 msgid "Half width Katakana"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:32 src/kkc.c:85 src/fcitx-kkc.desc:7
+#: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
 msgid "Latin"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:33 src/kkc.c:86 src/fcitx-kkc.desc:8
+#: gui/shortcutmodel.cpp:52 src/kkc.c:85 src/fcitx-kkc.desc:8
 #: src/fcitx-kkc.desc:20
 msgid "Wide latin"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:71 src/kkc.c:203
+#: gui/shortcutmodel.cpp:90 src/kkc.c:202
 msgid "Input Mode"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:73
+#: gui/shortcutmodel.cpp:92
 msgid "Key"
 msgstr ""
 
-#: gui/shortcutmodel.cpp:75
+#: gui/shortcutmodel.cpp:94
 msgid "Function"
 msgstr ""
 
@@ -95,28 +95,28 @@ msgid "&Rule:"
 msgstr ""
 
 #: gui/shortcutwidget.cpp:117
-msgid "Kana Kanji Shortcut Manager"
+msgid "Shortcut Manager"
 msgstr ""
 
-#: gui/shortcutwidget.cpp:125
+#: gui/shortcutwidget.cpp:130
 msgid "Save Changes"
 msgstr ""
 
-#: gui/shortcutwidget.cpp:126
+#: gui/shortcutwidget.cpp:131
 msgid ""
 "The content has changed.\n"
 "Do you want to save the changes or discard them?"
 msgstr ""
 
-#: gui/shortcutwidget.cpp:150
+#: gui/shortcutwidget.cpp:155
 msgid "Key Conflict"
 msgstr ""
 
-#: gui/shortcutwidget.cpp:150
+#: gui/shortcutwidget.cpp:155
 msgid "Key to add is conflict with existing shortcut."
 msgstr ""
 
-#: src/kkc.c:177 src/kkc.conf.in:3
+#: src/kkc.c:176 src/kkc.conf.in:3
 msgid "Kana Kanji"
 msgstr ""
 
@@ -139,7 +139,7 @@ msgstr ""
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
 #: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
-#: src/fcitx-kkc.desc:65
+#: src/fcitx-kkc.desc:65 src/fcitx-kkc.desc:70
 msgid "General"
 msgstr ""
 
@@ -188,21 +188,25 @@ msgid "Number candidate of Triggers To Show Candidate Window"
 msgstr ""
 
 #: src/fcitx-kkc.desc:47
-msgid "Candidates Page Up"
+msgid "Auto correct input sequence"
 msgstr ""
 
 #: src/fcitx-kkc.desc:52
-msgid "Candidates Page Down"
+msgid "Candidates Page Up"
 msgstr ""
 
 #: src/fcitx-kkc.desc:57
-msgid "Cursor Up"
+msgid "Candidates Page Down"
 msgstr ""
 
 #: src/fcitx-kkc.desc:62
-msgid "Cursor Down"
+msgid "Cursor Up"
 msgstr ""
 
 #: src/fcitx-kkc.desc:67
+msgid "Cursor Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:72
 msgid "Show Annotation"
 msgstr ""
