@@ -302,7 +302,7 @@ INPUT_RETURN_VALUE FcitxKkcGetCandWord(void* arg, FcitxCandidateWord* word)
     FcitxKkc *kkc = (FcitxKkc*)arg;
     KkcCandidateList* kkcCandidates = kkc_context_get_candidates(kkc->context);
     int idx = *((int*)word->priv);
-    gboolean retval = kkc_candidate_list_select_at(kkcCandidates, idx % kkc->config.pageSize);
+    gboolean retval = kkc_candidate_list_select_at(kkcCandidates, idx % kkc_candidate_list_get_page_size(kkcCandidates));
     if (retval) {
         return IRV_DISPLAY_CANDWORDS;
     }
@@ -397,7 +397,7 @@ INPUT_RETURN_VALUE FcitxKkcGetCandWords(void* arg)
             if (kkc->config.showAnnotation && kkc_candidate_get_annotation(kkcCandidate)) {
                 fcitx_utils_alloc_cat_str(word.strExtra, " [", kkc_candidate_get_annotation(kkcCandidate), "]");
             }
-            word.strWord = strdup(kkc_candidate_get_text(kkc_candidate_list_get(kkcCandidates, i)));
+            word.strWord = strdup(kkc_candidate_get_text(kkcCandidate));
             if (i == cursor_pos) {
                 word.wordType = MSG_CANDIATE_CURSOR;
             } else {
