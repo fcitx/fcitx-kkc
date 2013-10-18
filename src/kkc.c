@@ -129,6 +129,11 @@ FcitxKkcCreate(FcitxInstance *instance)
     bind_textdomain_codeset("fcitx-kkc", "UTF-8");
     kkc->owner = instance;
 
+    if (!KkcLoadConfig(&kkc->config)) {
+        free(kkc);
+        return NULL;
+    }
+
 #if !GLIB_CHECK_VERSION(2, 36, 0)
     g_type_init();
 #endif
@@ -153,12 +158,6 @@ FcitxKkcCreate(FcitxInstance *instance)
     }
     kkc_context_set_punctuation_style(kkc->context, KKC_PUNCTUATION_STYLE_JA_JA);
     kkc_context_set_input_mode(kkc->context, KKC_INPUT_MODE_HIRAGANA);
-
-    if (!KkcLoadConfig(&kkc->config)) {
-        free(kkc);
-        return NULL;
-    }
-
     kkc->tempMsg = FcitxMessagesNew();
 
 
