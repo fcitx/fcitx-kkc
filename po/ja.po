@@ -5,13 +5,14 @@
 # Translators:
 # しろう, 2013
 # しろう, 2013
+# しろう, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-10-18 03:13-0400\n"
-"PO-Revision-Date: 2013-06-15 15:56+0000\n"
-"Last-Translator: いくや あわしろ <ikunya@gmail.com>\n"
+"POT-Creation-Date: 2013-10-26 14:43-0400\n"
+"PO-Revision-Date: 2013-10-18 14:00+0000\n"
+"Last-Translator: しろう\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/"
 "ja/)\n"
 "Language: ja\n"
@@ -73,9 +74,8 @@ msgid "Dictionary"
 msgstr "辞書"
 
 #: gui/dictwidget.cpp:56
-#, fuzzy
 msgid "Dictionary Manager"
-msgstr "かな漢字辞書マネージャー"
+msgstr "辞書マネージャー"
 
 #: src/fcitx-kkc.desc:19
 msgid "Direct input"
@@ -177,9 +177,8 @@ msgid "Shortcut"
 msgstr "ショートカット"
 
 #: gui/shortcutwidget.cpp:117
-#, fuzzy
 msgid "Shortcut Manager"
-msgstr "かな漢字ショートカットマネージャー"
+msgstr "ショートカットマネージャー"
 
 #: src/fcitx-kkc.desc:72
 msgid "Show Annotation"
@@ -217,6 +216,3 @@ msgstr "全角英数"
 #: src/fcitx-kkc.desc:9
 msgid "Wide latin Japanese"
 msgstr "全角英字と日本語"
-
-#~ msgid "&Text:"
-#~ msgstr "テキスト(&T):"

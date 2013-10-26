@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-10-18 03:13-0400\n"
-"PO-Revision-Date: 2013-06-14 22:08+0000\n"
+"POT-Creation-Date: 2013-10-26 14:43-0400\n"
+"PO-Revision-Date: 2013-10-18 07:19+0000\n"
 "Last-Translator: Xuetian Weng <wengxt@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/fcitx/"
 "language/zh_TW/)\n"
@@ -20,23 +20,23 @@ msgstr ""
 
 #: gui/addshortcutdialog.cpp:32
 msgid "&Command"
-msgstr ""
+msgstr "指令(&C)"
 
 #: gui/addshortcutdialog.cpp:31
 msgid "&Input Mode"
-msgstr ""
+msgstr "輸入模式(&I)"
 
 #: gui/addshortcutdialog.cpp:33
 msgid "&Key"
-msgstr ""
+msgstr "按鍵(&K)"
 
 #: gui/adddictdialog.cpp:36
 msgid "&Path:"
-msgstr ""
+msgstr "路徑(&P)："
 
 #: gui/shortcutwidget.cpp:37
 msgid "&Rule:"
-msgstr ""
+msgstr "按鍵方案(&R)："
 
 #: gui/adddictdialog.cpp:35
 msgid "&Type:"
@@ -68,7 +68,7 @@ msgstr "游標向上"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Dictionary"
-msgstr ""
+msgstr "字典"
 
 #: gui/dictwidget.cpp:56
 msgid "Dictionary Manager"
@@ -80,7 +80,7 @@ msgstr "直接輸入"
 
 #: gui/shortcutmodel.cpp:94
 msgid "Function"
-msgstr ""
+msgstr "功能"
 
 #: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
 #: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
@@ -127,15 +127,15 @@ msgstr "片假名"
 
 #: gui/shortcutmodel.cpp:92
 msgid "Key"
-msgstr ""
+msgstr "按鍵"
 
 #: gui/shortcutwidget.cpp:155
 msgid "Key Conflict"
-msgstr ""
+msgstr "按鍵衝突"
 
 #: gui/shortcutwidget.cpp:155
 msgid "Key to add is conflict with existing shortcut."
-msgstr ""
+msgstr "新增的按鍵和現有的快捷鍵衝突。"
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
@@ -159,19 +159,19 @@ msgstr "標點風格"
 
 #: gui/shortcutwidget.cpp:130
 msgid "Save Changes"
-msgstr ""
+msgstr "儲存變更"
 
 #: gui/adddictdialog.cpp:91
 msgid "Select Dictionary Directory"
-msgstr ""
+msgstr "選擇字典目錄"
 
 #: gui/adddictdialog.cpp:77
 msgid "Select Dictionary File"
-msgstr ""
+msgstr "選擇字典檔案"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Shortcut"
-msgstr ""
+msgstr "快捷鍵"
 
 #: gui/shortcutwidget.cpp:117
 msgid "Shortcut Manager"
@@ -183,13 +183,15 @@ msgstr "顯示注釋"
 
 #: gui/adddictdialog.cpp:37
 msgid "System"
-msgstr ""
+msgstr "系統"
 
 #: gui/shortcutwidget.cpp:131
 msgid ""
 "The content has changed.\n"
 "Do you want to save the changes or discard them?"
 msgstr ""
+"內容已更改。\n"
+"您想要儲存還是放棄修改？"
 
 #: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
@@ -197,7 +199,7 @@ msgstr "這是一個簡單的 Fcitx 模組的範本"
 
 #: gui/adddictdialog.cpp:38
 msgid "User"
-msgstr ""
+msgstr "使用者"
 
 #: src/fcitx-kkc.desc:34
 msgid "Vertical"
