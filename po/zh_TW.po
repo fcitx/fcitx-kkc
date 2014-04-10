@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# fhoshino <fh@pinchia.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-10-26 14:43-0400\n"
-"PO-Revision-Date: 2013-10-18 07:19+0000\n"
-"Last-Translator: Xuetian Weng <wengxt@gmail.com>\n"
+"POT-Creation-Date: 2014-04-10 07:02+0200\n"
+"PO-Revision-Date: 2014-04-10 04:43+0000\n"
+"Last-Translator: fhoshino <fh@pinchia.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/fcitx/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
@@ -44,7 +45,7 @@ msgstr ""
 
 #: src/fcitx-kkc.desc:47
 msgid "Auto correct input sequence"
-msgstr ""
+msgstr "自動修正輸入次序"
 
 #: src/fcitx-kkc.desc:31
 msgid "Candidate List Layout"
@@ -72,7 +73,7 @@ msgstr "字典"
 
 #: gui/dictwidget.cpp:56
 msgid "Dictionary Manager"
-msgstr ""
+msgstr "字典管理"
 
 #: src/fcitx-kkc.desc:19
 msgid "Direct input"
@@ -175,7 +176,7 @@ msgstr "快捷鍵"
 
 #: gui/shortcutwidget.cpp:117
 msgid "Shortcut Manager"
-msgstr ""
+msgstr "快捷鍵管理"
 
 #: src/fcitx-kkc.desc:72
 msgid "Show Annotation"
