@@ -249,7 +249,7 @@ INPUT_RETURN_VALUE FcitxKkcDoInputReal(void* arg, FcitxKeySym sym, unsigned int 
 
     FcitxInputState* input = FcitxInstanceGetInputState(kkc->owner);
     uint32_t keycode = FcitxInputStateGetKeyCode(input);
-    KkcKeyEvent* key = kkc_key_event_new_from_x_event(sym, keycode, state);
+    KkcKeyEvent* key = kkc_key_event_new_from_x_event(sym, keycode - 8, state);
     if (!key) {
         return IRV_TO_PROCESS;
     }
