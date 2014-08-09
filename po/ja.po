@@ -4,16 +4,17 @@
 #
 # Translators:
 # しろう, 2013
-# しろう, 2013
+# WAKAYAMA Shirou <shirou.faw@gmail.com>, 2013
+# AWASHIRO Ikuya <ikunya@gmail.com>, 2014
 # Masaharu IWAI <iwaim.sub@gmail.com>, 2013
-# しろう, 2013
+# WAKAYAMA Shirou <shirou.faw@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-11-07 18:02-0500\n"
-"PO-Revision-Date: 2013-11-07 22:59+0000\n"
-"Last-Translator: Masaharu IWAI <iwaim.sub@gmail.com>\n"
+"POT-Creation-Date: 2014-08-09 18:04+0200\n"
+"PO-Revision-Date: 2014-08-09 12:22+0000\n"
+"Last-Translator: AWASHIRO Ikuya <ikunya@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/fcitx/language/"
 "ja/)\n"
 "Language: ja\n"
@@ -44,7 +45,7 @@ msgstr "ルール(&R):"
 
 #: gui/adddictdialog.cpp:35
 msgid "&Type:"
-msgstr ""
+msgstr "形式(&T):"
 
 #: src/fcitx-kkc.desc:47
 msgid "Auto correct input sequence"
@@ -95,7 +96,7 @@ msgstr "全般"
 
 #: src/fcitx-kkc.desc:33
 msgid "Global"
-msgstr "全体"
+msgstr "任せる"
 
 #: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
 msgid "Half width Katakana"
