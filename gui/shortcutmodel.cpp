@@ -50,6 +50,7 @@ const char* modeName[] = {
     N_("Half width Katakana"),
     N_("Latin"),
     N_("Wide latin"),
+    N_("Direct input"),
 };
 
 QVariant ShortcutModel::data(const QModelIndex& index, int role) const
@@ -124,7 +125,7 @@ void ShortcutModel::load(const QString& name)
             break;
         }
 
-        for (int mode = 0; mode < KKC_INPUT_MODE_DIRECT; mode ++) {
+        for (int mode = 0; mode <= KKC_INPUT_MODE_DIRECT; mode ++) {
             KkcKeymap* keymap = kkc_rule_get_keymap(KKC_RULE(userRule), (KkcInputMode) mode);
             int length;
             KkcKeymapEntry* entries = kkc_keymap_entries(keymap, &length);
@@ -153,7 +154,7 @@ void ShortcutModel::load(const QString& name)
 void ShortcutModel::save()
 {
     if (m_userRule && m_needSave) {
-        for (int mode = 0; mode < KKC_INPUT_MODE_DIRECT; mode ++) {
+        for (int mode = 0; mode <= KKC_INPUT_MODE_DIRECT; mode ++) {
             kkc_user_rule_write(m_userRule, (KkcInputMode) mode, NULL);
         }
     }
