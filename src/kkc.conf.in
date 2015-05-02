@@ -2,6 +2,6 @@
 UniqueName=kkc
 _Name=Kana Kanji
 IconName=kkc
-Priority=1
+Priority=3
 LangCode=ja
 Parent=fcitx-kkc
