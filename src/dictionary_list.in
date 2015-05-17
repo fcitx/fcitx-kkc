@@ -1,2 +1,6 @@
-type=file,file=@SKK_DEFAULT_PATH@,mode=readonly
+type=file,file=@SKK_DEFAULT_PATH@SKK-JISYO.L,mode=readonly
 type=file,file=$FCITX_CONFIG_DIR/kkc/dictionary,mode=readwrite
+type=file,file=@SKK_DEFAULT_PATH@SKK-JISYO.zipcode,mode=readonly
+type=file,file=@SKK_DEFAULT_PATH@SKK-JISYO.station,mode=readonly
+type=file,file=@SKK_DEFAULT_PATH@SKK-JISYO.jinmei,mode=readonly
+type=file,file=@SKK_DEFAULT_PATH@SKK-JISYO.geo,mode=readonly

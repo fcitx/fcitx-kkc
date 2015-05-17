@@ -15,7 +15,7 @@ pkg_check_modules(FCITX_QT "fcitx-qt>=4.2.8" REQUIRED)
 endif ()
 
 if (NOT SKK_DEFAULT_PATH)
-    set(SKK_DEFAULT_PATH "/usr/share/skk/SKK-JISYO.L")
+    set(SKK_DEFAULT_PATH "/usr/share/skk/")
 endif ()
 
 # This will add a uninstall target. Comment out this line if other cmake packages
