@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: fcitx\n"
+"Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
+"POT-Creation-Date: 2013-10-18 03:13-0400\n"
+"PO-Revision-Date: 2013-04-04 14:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Danish (http://www.transifex.com/fcitx/fcitx/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gui/adddictdialog.cpp:35
+msgid "&Type:"
+msgstr ""
+
+#: gui/adddictdialog.cpp:36
+msgid "&Path:"
+msgstr ""
+
+#: gui/adddictdialog.cpp:37
+msgid "System"
+msgstr ""
+
+#: gui/adddictdialog.cpp:38
+msgid "User"
+msgstr ""
+
+#: gui/adddictdialog.cpp:77
+msgid "Select Dictionary File"
+msgstr ""
+
+#: gui/adddictdialog.cpp:91
+msgid "Select Dictionary Directory"
+msgstr ""
+
+#: gui/addshortcutdialog.cpp:31
+msgid "&Input Mode"
+msgstr ""
+
+#: gui/addshortcutdialog.cpp:32
+msgid "&Command"
+msgstr ""
+
+#: gui/addshortcutdialog.cpp:33
+msgid "&Key"
+msgstr ""
+
+#: gui/dictwidget.cpp:56
+msgid "Dictionary Manager"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
+msgid "Hiragana"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
+msgid "Katakana"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
+msgid "Half width Katakana"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
+msgid "Latin"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:52 src/kkc.c:85 src/fcitx-kkc.desc:8
+#: src/fcitx-kkc.desc:20
+msgid "Wide latin"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:90 src/kkc.c:202
+msgid "Input Mode"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:92
+msgid "Key"
+msgstr ""
+
+#: gui/shortcutmodel.cpp:94
+msgid "Function"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:37
+msgid "&Rule:"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:117
+msgid "Shortcut Manager"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:130
+msgid "Save Changes"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:131
+msgid ""
+"The content has changed.\n"
+"Do you want to save the changes or discard them?"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:155
+msgid "Key Conflict"
+msgstr ""
+
+#: gui/shortcutwidget.cpp:155
+msgid "Key to add is conflict with existing shortcut."
+msgstr ""
+
+#: src/kkc.c:176 src/kkc.conf.in:3
+msgid "Kana Kanji"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:3
+msgid "Kkc Addon of Fcitx"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:4
+msgid "This is a template of a simple Fcitx Module"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Dictionary"
+msgstr ""
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Shortcut"
+msgstr ""
+
+#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
+#: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
+#: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
+#: src/fcitx-kkc.desc:65 src/fcitx-kkc.desc:70
+msgid "General"
+msgstr ""
+
+#: src/fcitx-kkc.desc:3
+msgid "Punctuation Style"
+msgstr ""
+
+#: src/fcitx-kkc.desc:6
+msgid "Japanese"
+msgstr ""
+
+#: src/fcitx-kkc.desc:9
+msgid "Wide latin Japanese"
+msgstr ""
+
+#: src/fcitx-kkc.desc:13
+msgid "Initial Input Mode"
+msgstr ""
+
+#: src/fcitx-kkc.desc:19
+msgid "Direct input"
+msgstr ""
+
+#: src/fcitx-kkc.desc:24
+msgid "Page size"
+msgstr ""
+
+#: src/fcitx-kkc.desc:31
+msgid "Candidate List Layout"
+msgstr ""
+
+#: src/fcitx-kkc.desc:33
+msgid "Global"
+msgstr ""
+
+#: src/fcitx-kkc.desc:34
+msgid "Vertical"
+msgstr ""
+
+#: src/fcitx-kkc.desc:35
+msgid "Horizontal"
+msgstr ""
+
+#: src/fcitx-kkc.desc:40
+msgid "Number candidate of Triggers To Show Candidate Window"
+msgstr ""
+
+#: src/fcitx-kkc.desc:47
+msgid "Auto correct input sequence"
+msgstr ""
+
+#: src/fcitx-kkc.desc:52
+msgid "Candidates Page Up"
+msgstr ""
+
+#: src/fcitx-kkc.desc:57
+msgid "Candidates Page Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:62
+msgid "Cursor Up"
+msgstr ""
+
+#: src/fcitx-kkc.desc:67
+msgid "Cursor Down"
+msgstr ""
+
+#: src/fcitx-kkc.desc:72
+msgid "Show Annotation"
+msgstr ""
