@@ -4,12 +4,13 @@
 #
 # Translators:
 # mar well <m.wellendorf@gmx.de>, 2013
+# mar well <m.wellendorf@gmx.de>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2015-12-11 23:18-0800\n"
-"PO-Revision-Date: 2013-10-31 03:20+0000\n"
+"POT-Creation-Date: 2017-07-28 06:03-0700\n"
+"PO-Revision-Date: 2017-07-28 12:39+0000\n"
 "Last-Translator: mar well <m.wellendorf@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/fcitx/fcitx/language/de/)\n"
 "Language: de\n"
@@ -24,7 +25,7 @@ msgstr "&Befehl"
 
 #: gui/addshortcutdialog.cpp:31
 msgid "&Input Mode"
-msgstr "Eingabemodus"
+msgstr "&Eingabemodus"
 
 #: gui/addshortcutdialog.cpp:33
 msgid "&Key"
@@ -131,12 +132,11 @@ msgstr "Taste"
 
 #: gui/shortcutwidget.cpp:155
 msgid "Key Conflict"
-msgstr "Konflikt Taste"
+msgstr "Tasten Konflikt"
 
 #: gui/shortcutwidget.cpp:155
 msgid "Key to add is conflict with existing shortcut."
-msgstr ""
-"Die hinzuzufügende Taste steht im Konflikt mit einem bestehenden Kurzbefehl "
+msgstr "Die hinzuzufügende Kurzbefehl wird schon verwendet. "
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
@@ -156,7 +156,7 @@ msgstr "Seitengröße"
 
 #: src/fcitx-kkc.desc:3
 msgid "Punctuation Style"
-msgstr "Stil der Interpunktion"
+msgstr "Interpunktionsstil"
 
 #: gui/shortcutwidget.cpp:130
 msgid "Save Changes"
