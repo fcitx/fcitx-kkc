@@ -1,9 +1,10 @@
 # Add language code here each language code should correspond to a
 # [language].po file in this directory.
-set(PO_LANGS de ja zh_CN zh_TW
-  )
-foreach(lang ${PO_LANGS})
-  fcitx_translate_add_po_file("${lang}" "${lang}.po")
+file(GLOB PO_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" *.po)
+
+foreach(po_file ${PO_FILES})
+  string(REPLACE ".po" "" po_lang "${po_file}")
+  fcitx_translate_add_po_file("${po_lang}" "${po_file}")
 endforeach()
 
 # This will register a pot target to update your po and pot files according to
