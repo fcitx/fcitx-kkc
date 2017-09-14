@@ -1,113 +1,133 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Bon Keun Seo <scobyseo@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-10-18 03:13-0400\n"
-"PO-Revision-Date: 2017-07-15 12:53+0000\n"
+"POT-Creation-Date: 2017-09-14 16:03-0700\n"
+"PO-Revision-Date: 2017-08-03 16:58+0000\n"
 "Last-Translator: Bon Keun Seo <scobyseo@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/fcitx/fcitx/language/ko/)\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: gui/adddictdialog.cpp:35
-msgid "&Type:"
-msgstr "형식(&T):"
-
-#: gui/adddictdialog.cpp:36
-msgid "&Path:"
-msgstr "경로(&P)"
-
-#: gui/adddictdialog.cpp:37
-msgid "System"
-msgstr "시스템"
-
-#: gui/adddictdialog.cpp:38
-msgid "User"
-msgstr "사용자"
-
-#: gui/adddictdialog.cpp:77
-msgid "Select Dictionary File"
-msgstr "사전 파일 선택"
-
-#: gui/adddictdialog.cpp:91
-msgid "Select Dictionary Directory"
-msgstr "사전 경로 선택"
-
-#: gui/addshortcutdialog.cpp:31
-msgid "&Input Mode"
-msgstr "입력 모드(&I)"
 
 #: gui/addshortcutdialog.cpp:32
 msgid "&Command"
 msgstr "명령(&C)"
 
+#: gui/addshortcutdialog.cpp:31
+msgid "&Input Mode"
+msgstr "입력 모드(&I)"
+
 #: gui/addshortcutdialog.cpp:33
 msgid "&Key"
 msgstr "키(&K)"
 
-#: gui/dictwidget.cpp:56
-msgid "Dictionary Manager"
-msgstr "사전 관리자"
-
-#: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
-msgid "Hiragana"
-msgstr "히라가나"
-
-#: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
-msgid "Katakana"
-msgstr "가타가나"
-
-#: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
-msgid "Half width Katakana"
-msgstr "반각 가타가나"
-
-#: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
-msgid "Latin"
-msgstr "로마자"
-
-#: gui/shortcutmodel.cpp:52 src/kkc.c:85 src/fcitx-kkc.desc:8
-#: src/fcitx-kkc.desc:20
-msgid "Wide latin"
-msgstr "전각 로마자"
-
-#: gui/shortcutmodel.cpp:90 src/kkc.c:202
-msgid "Input Mode"
-msgstr "입력 모드"
-
-#: gui/shortcutmodel.cpp:92
-msgid "Key"
-msgstr "키"
-
-#: gui/shortcutmodel.cpp:94
-msgid "Function"
-msgstr "기능"
+#: gui/adddictdialog.cpp:36
+msgid "&Path:"
+msgstr "경로(&P)"
 
 #: gui/shortcutwidget.cpp:37
 msgid "&Rule:"
 msgstr "규칙(&R)"
 
-#: gui/shortcutwidget.cpp:117
-msgid "Shortcut Manager"
-msgstr "단축키 관리자"
+#: gui/adddictdialog.cpp:35
+msgid "&Type:"
+msgstr "형식(&T):"
 
-#: gui/shortcutwidget.cpp:130
-msgid "Save Changes"
-msgstr "변경 내용 저장"
+#: src/fcitx-kkc.desc:47
+msgid "Auto correct input sequence"
+msgstr "입력 순서 자동 교정"
 
-#: gui/shortcutwidget.cpp:131
-msgid ""
-"The content has changed.\n"
-"Do you want to save the changes or discard them?"
-msgstr "내용이 변했습니다.\n변경사항을 저장할까요?"
+#: src/fcitx-kkc.desc:31
+msgid "Candidate List Layout"
+msgstr "후보 목록 모양"
+
+#: src/fcitx-kkc.desc:57
+msgid "Candidates Page Down"
+msgstr "다음 후보 페이지"
+
+#: src/fcitx-kkc.desc:52
+msgid "Candidates Page Up"
+msgstr "이전 후보 페이지"
+
+#: src/fcitx-kkc.desc:67
+msgid "Cursor Down"
+msgstr "커서를 아래로"
+
+#: src/fcitx-kkc.desc:62
+msgid "Cursor Up"
+msgstr "커서를 위로"
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Dictionary"
+msgstr "사전"
+
+#: gui/dictwidget.cpp:56
+msgid "Dictionary Manager"
+msgstr "사전 관리자"
+
+#: src/fcitx-kkc.desc:19
+msgid "Direct input"
+msgstr "직접 입력"
+
+#: gui/shortcutmodel.cpp:94
+msgid "Function"
+msgstr "기능"
+
+#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
+#: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
+#: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
+#: src/fcitx-kkc.desc:65 src/fcitx-kkc.desc:70
+msgid "General"
+msgstr "일반"
+
+#: src/fcitx-kkc.desc:33
+msgid "Global"
+msgstr "전역"
+
+#: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
+msgid "Half width Katakana"
+msgstr "반각 가타가나"
+
+#: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
+msgid "Hiragana"
+msgstr "히라가나"
+
+#: src/fcitx-kkc.desc:35
+msgid "Horizontal"
+msgstr "가로"
+
+#: src/fcitx-kkc.desc:13
+msgid "Initial Input Mode"
+msgstr "초기 입력 모드"
+
+#: gui/shortcutmodel.cpp:90 src/kkc.c:202
+msgid "Input Mode"
+msgstr "입력 모드"
+
+#: src/fcitx-kkc.desc:6
+msgid "Japanese"
+msgstr "일본어"
+
+#: src/kkc.c:176 src/kkc.conf.in:3
+msgid "Kana Kanji"
+msgstr "가나 한자"
+
+#: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
+msgid "Katakana"
+msgstr "가타가나"
+
+#: gui/shortcutmodel.cpp:92
+msgid "Key"
+msgstr "키"
 
 #: gui/shortcutwidget.cpp:155
 msgid "Key Conflict"
@@ -117,97 +137,79 @@ msgstr "키 충돌"
 msgid "Key to add is conflict with existing shortcut."
 msgstr "추가하려는 키가 기존 단축기와 겹칩니다."
 
-#: src/kkc.c:176 src/kkc.conf.in:3
-msgid "Kana Kanji"
-msgstr "가나 한자"
-
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
 msgstr "Fcitx를 위한 KKC 부가기능"
 
-#: src/fcitx-kkc.conf.in:4
-msgid "This is a template of a simple Fcitx Module"
-msgstr "단순 Fcitx 모듈의 템플릿이라는 문자열을 안지웠네용."
-
-#: src/fcitx-kkc.conf.in:11
-msgid "Dictionary"
-msgstr "사전"
-
-#: src/fcitx-kkc.conf.in:11
-msgid "Shortcut"
-msgstr "단축키"
-
-#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
-#: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
-#: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
-#: src/fcitx-kkc.desc:65 src/fcitx-kkc.desc:70
-msgid "General"
-msgstr "일반"
-
-#: src/fcitx-kkc.desc:3
-msgid "Punctuation Style"
-msgstr "문장부호 스타일"
-
-#: src/fcitx-kkc.desc:6
-msgid "Japanese"
-msgstr "일본어"
-
-#: src/fcitx-kkc.desc:9
-msgid "Wide latin Japanese"
-msgstr "전각 로마자 일본어"
-
-#: src/fcitx-kkc.desc:13
-msgid "Initial Input Mode"
-msgstr "초기 입력 모드"
-
-#: src/fcitx-kkc.desc:19
-msgid "Direct input"
-msgstr "직접 입력"
-
-#: src/fcitx-kkc.desc:24
-msgid "Page size"
-msgstr "페이지 크기"
-
-#: src/fcitx-kkc.desc:31
-msgid "Candidate List Layout"
-msgstr "후보 목록 모양"
-
-#: src/fcitx-kkc.desc:33
-msgid "Global"
-msgstr "전역"
-
-#: src/fcitx-kkc.desc:34
-msgid "Vertical"
-msgstr "세로"
-
-#: src/fcitx-kkc.desc:35
-msgid "Horizontal"
-msgstr "가로"
+#: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
+msgid "Latin"
+msgstr "로마자"
 
 #: src/fcitx-kkc.desc:40
 msgid "Number candidate of Triggers To Show Candidate Window"
 msgstr "후보 창을 보이기 위한 후보의 수"
 
-#: src/fcitx-kkc.desc:47
-msgid "Auto correct input sequence"
-msgstr "입력 순서 자동 교정"
+#: src/fcitx-kkc.desc:24
+msgid "Page size"
+msgstr "페이지 크기"
 
-#: src/fcitx-kkc.desc:52
-msgid "Candidates Page Up"
-msgstr "이전 후보 페이지"
+#: src/fcitx-kkc.desc:3
+msgid "Punctuation Style"
+msgstr "문장부호 스타일"
 
-#: src/fcitx-kkc.desc:57
-msgid "Candidates Page Down"
-msgstr "다음 후보 페이지"
+#: gui/shortcutwidget.cpp:130
+msgid "Save Changes"
+msgstr "변경 내용 저장"
 
-#: src/fcitx-kkc.desc:62
-msgid "Cursor Up"
-msgstr "커서를 위로"
+#: gui/adddictdialog.cpp:91
+msgid "Select Dictionary Directory"
+msgstr "사전 경로 선택"
 
-#: src/fcitx-kkc.desc:67
-msgid "Cursor Down"
-msgstr "커서를 아래로"
+#: gui/adddictdialog.cpp:77
+msgid "Select Dictionary File"
+msgstr "사전 파일 선택"
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Shortcut"
+msgstr "단축키"
+
+#: gui/shortcutwidget.cpp:117
+msgid "Shortcut Manager"
+msgstr "단축키 관리자"
 
 #: src/fcitx-kkc.desc:72
 msgid "Show Annotation"
 msgstr "주석 보이기"
+
+#: gui/adddictdialog.cpp:37
+msgid "System"
+msgstr "시스템"
+
+#: gui/shortcutwidget.cpp:131
+msgid ""
+"The content has changed.\n"
+"Do you want to save the changes or discard them?"
+msgstr ""
+"내용이 변했습니다.\n"
+"변경사항을 저장할까요?"
+
+#: src/fcitx-kkc.conf.in:4
+msgid "This is a template of a simple Fcitx Module"
+msgstr "단순 Fcitx 모듈의 템플릿이라는 문자열을 안지웠네용."
+
+#: gui/adddictdialog.cpp:38
+msgid "User"
+msgstr "사용자"
+
+#: src/fcitx-kkc.desc:34
+msgid "Vertical"
+msgstr "세로"
+
+#: gui/shortcutmodel.cpp:52 src/kkc.c:85 src/fcitx-kkc.desc:8
+#: src/fcitx-kkc.desc:20
+msgid "Wide latin"
+msgstr "전각 로마자"
+
+#: src/fcitx-kkc.desc:9
+msgid "Wide latin Japanese"
+msgstr "전각 로마자 일본어"
