@@ -20,12 +20,13 @@
 #ifndef FCITX_KKC_GUI_MAIN_H_
 #define FCITX_KKC_GUI_MAIN_H_
 
-#include <fcitx-qt/fcitxqtconfiguiplugin.h>
+#include <fcitxqtconfiguiplugin.h>
 
 class KkcConfigPlugin : public FcitxQtConfigUIPlugin
 {
     Q_OBJECT
 public:
+    Q_PLUGIN_METADATA(IID FcitxQtConfigUIFactoryInterface_iid FILE "kkc-config.json")
     explicit KkcConfigPlugin(QObject* parent = 0);
     virtual QString name();
     virtual QStringList files();

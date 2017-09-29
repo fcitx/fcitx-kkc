@@ -93,7 +93,7 @@
   <customwidget>
    <class>FcitxQtKeySequenceWidget</class>
    <extends>QWidget</extends>
-   <header>fcitx-qt/fcitxqtkeysequencewidget.h</header>
+   <header>fcitxqtkeysequencewidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

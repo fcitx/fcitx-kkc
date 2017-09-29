@@ -16,17 +16,13 @@ if(NOT ENABLE_QT)
 endif()
 
 include_directories(
-  ${FCITX_QT_INCLUDE_DIRS}
-  ${QT_QTCORE_INCLUDE_DIR}
-  ${QT_QTGUI_INCLUDE_DIR}
   ${CMAKE_CURRENT_BINARY_DIR}
   )
 
 link_directories(
-  ${FCITX_QT_LIBRARY_DIRS}
   ${FCITX4_FCITX_CONFIG_LIBRARY_DIRS}
   )
-qt4_wrap_ui(KKC_CONFIG_SRCS dictwidget.ui adddictdialog.ui shortcutwidget.ui addshortcutdialog.ui)
+qt5_wrap_ui(KKC_CONFIG_SRCS dictwidget.ui adddictdialog.ui shortcutwidget.ui addshortcutdialog.ui)
 add_library(fcitx-kkc-config
   MODULE ${KKC_CONFIG_SRCS})
 
@@ -37,13 +33,9 @@ set_target_properties(fcitx-kkc-config PROPERTIES
                       AUTOMOC TRUE
 )
 target_link_libraries(fcitx-kkc-config
-  debug ${QT_QTCORE_LIBRARY_DEBUG}
-  debug ${QT_QTDBUS_LIBRARY_DEBUG}
-  debug ${QT_QTGUI_LIBRARY_DEBUG}
-  optimized ${QT_QTCORE_LIBRARY_RELEASE}
-  optimized ${QT_QTDBUS_LIBRARY_RELEASE}
-  optimized ${QT_QTGUI_LIBRARY_RELEASE}
-  ${FCITX_QT_LIBRARIES}
+  Qt5::Core
+  Qt5::Widgets
+  FcitxQt5::WidgetsAddons
   ${FCITX4_FCITX_CONFIG_LIBRARIES}
   ${LIBKKC_LIBRARIES}
   )

@@ -20,7 +20,7 @@
 #ifndef FCITX_KKC_GUI_SHORTCUTWIDGET_H
 #define FCITX_KKC_GUI_SHORTCUTWIDGET_H
 
-#include <fcitx-qt/fcitxqtconfiguiwidget.h>
+#include <fcitxqtconfiguiwidget.h>
 #include <libkkc/libkkc.h>
 
 class RuleModel;

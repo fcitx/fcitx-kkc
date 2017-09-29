@@ -61,6 +61,3 @@ QString KkcConfigPlugin::domain()
 {
     return "fcitx-kkc";
 }
-
-
-Q_EXPORT_PLUGIN2(fcitx_kkc_config, KkcConfigPlugin)

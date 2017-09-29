@@ -20,7 +20,7 @@
 #ifndef FCITX_KKC_GUI_DICTWIDGET_H
 #define FCITX_KKC_GUI_DICTWIDGET_H
 
-#include <fcitx-qt/fcitxqtconfiguiwidget.h>
+#include <fcitxqtconfiguiwidget.h>
 
 class DictModel;
 namespace Ui {

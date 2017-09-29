@@ -10,8 +10,8 @@ pkg_check_modules(LIBKKC "kkc-1.0>=0.2.3" REQUIRED)
 find_package(Fcitx 4.2.8 REQUIRED)
 
 if (ENABLE_QT)
-find_package(Qt 4.8 REQUIRED)
-pkg_check_modules(FCITX_QT "fcitx-qt>=4.2.8" REQUIRED)
+find_package(Qt5 5.7 REQUIRED COMPONENTS Core Gui Widgets)
+find_package(FcitxQt5WidgetsAddons 1.1 REQUIRED)
 endif ()
 
 if (NOT SKK_DEFAULT_PATH)
