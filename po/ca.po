@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017
 # Walter Garcia-Fontes <walter.garcia@upf.edu>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2017-09-14 16:03-0700\n"
-"PO-Revision-Date: 2017-08-03 16:57+0000\n"
-"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"POT-Creation-Date: 2017-12-09 00:04-0800\n"
+"PO-Revision-Date: 2017-12-08 17:59+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/fcitx/fcitx/language/ca/)\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +140,7 @@ msgstr "La tecla a afegir està en conflicte amb una drecera existent."
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
-msgstr "Complement kkc del fcitx"
+msgstr "Complement kkc de fcitx"
 
 #: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
 msgid "Latin"
