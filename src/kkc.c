@@ -81,7 +81,7 @@ KkcStatus input_mode_status[] = {
     {"",  "\xe3\x81\x82", N_("Hiragana") },
     {"", "\xe3\x82\xa2", N_("Katakana") },
     {"", "\xef\xbd\xb1", N_("Half width Katakana") },
-    {"", "A\xcc\xb2", N_("Latin") },
+    {"", "A_", N_("Latin") },
     {"", "\xef\xbc\xa1", N_("Wide latin") },
     {"", "A", N_("Direct input") },
 };
