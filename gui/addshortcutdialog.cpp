@@ -33,7 +33,7 @@ AddShortcutDialog::AddShortcutDialog(QWidget* parent): QDialog(parent)
     m_ui->keyLabel->setText(_("&Key"));
     m_ui->keyButton->setModifierlessAllowed(true);
     m_ui->keyButton->setMultiKeyShortcutsAllowed(false);
-    for (int i = 0; i < KKC_INPUT_MODE_DIRECT; i++) {
+    for (int i = 0; i <= KKC_INPUT_MODE_DIRECT; i++) {
         m_ui->inputModeComboBox->addItem(_(modeName[i]));
     }
 

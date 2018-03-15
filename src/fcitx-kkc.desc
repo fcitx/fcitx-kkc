@@ -12,12 +12,13 @@ Enum3=Wide latin Japanese
 Type=Enum
 Description=Initial Input Mode
 DefaultValue=Hiragana
-EnumCount=5
+EnumCount=6
 Enum0=Hiragana
 Enum1=Katakana
 Enum2=Half width Katakana
-Enum3=Direct input
+Enum3=Latin
 Enum4=Wide latin
+Enum5=Direct input
 
 [General/PageSize]
 Type=Integer
