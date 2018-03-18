@@ -166,20 +166,18 @@ bool ShortcutModel::add(const ShortcutEntry& entry)
 {
     KkcKeymap* map = kkc_rule_get_keymap(KKC_RULE(m_userRule), entry.mode());
     bool result = true;
-    do {
-        if (kkc_keymap_lookup_key(map, entry.event())) {
-            result = false;
-        }
+    if (kkc_keymap_lookup_key(map, entry.event())) {
+        result = false;
+    }
+
+    if (result) {
         beginInsertRows(QModelIndex(), m_entries.size(), m_entries.size());
         m_entries << entry;
         kkc_keymap_set(map, entry.event(), entry.command().toUtf8().constData());
         endInsertRows();
-    } while(0);
-    g_object_unref(map);
-
-    if (result) {
         setNeedSave(true);
     }
+    g_object_unref(map);
 
     return result;
 }
