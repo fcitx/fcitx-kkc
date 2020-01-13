@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # mar well <m.wellendorf@gmx.de>, 2013
 # mar well <m.wellendorf@gmx.de>, 2017
@@ -9,106 +9,126 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-10-18 03:13-0400\n"
+"POT-Creation-Date: 2020-01-13 00:01-0800\n"
 "PO-Revision-Date: 2017-09-23 18:54+0000\n"
 "Last-Translator: mar well <m.wellendorf@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/fcitx/fcitx/language/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: gui/adddictdialog.cpp:35
-msgid "&Type:"
-msgstr "&Taste:"
-
-#: gui/adddictdialog.cpp:36
-msgid "&Path:"
-msgstr "&Pfad:"
-
-#: gui/adddictdialog.cpp:37
-msgid "System"
-msgstr "System"
-
-#: gui/adddictdialog.cpp:38
-msgid "User"
-msgstr "Benutzer"
-
-#: gui/adddictdialog.cpp:77
-msgid "Select Dictionary File"
-msgstr "Wörterbuchdatei auswählen"
-
-#: gui/adddictdialog.cpp:91
-msgid "Select Dictionary Directory"
-msgstr "Wörterbuchverzeichnis auswählen"
-
-#: gui/addshortcutdialog.cpp:31
-msgid "&Input Mode"
-msgstr "&Eingabemodus"
 
 #: gui/addshortcutdialog.cpp:32
 msgid "&Command"
 msgstr "&Befehl"
 
+#: gui/addshortcutdialog.cpp:31
+msgid "&Input Mode"
+msgstr "&Eingabemodus"
+
 #: gui/addshortcutdialog.cpp:33
 msgid "&Key"
 msgstr "&Taste"
 
-#: gui/dictwidget.cpp:56
-msgid "Dictionary Manager"
-msgstr "Wörterbuchverwaltung"
-
-#: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
-msgid "Hiragana"
-msgstr "Hiragana"
-
-#: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
-msgid "Katakana"
-msgstr "Katakana"
-
-#: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
-msgid "Half width Katakana"
-msgstr "Halbweites Katakana"
-
-#: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
-msgid "Latin"
-msgstr "Lateinisch"
-
-#: gui/shortcutmodel.cpp:52 src/kkc.c:85 src/fcitx-kkc.desc:8
-#: src/fcitx-kkc.desc:20
-msgid "Wide latin"
-msgstr "Wide latin"
-
-#: gui/shortcutmodel.cpp:90 src/kkc.c:202
-msgid "Input Mode"
-msgstr "Eingabemodus"
-
-#: gui/shortcutmodel.cpp:92
-msgid "Key"
-msgstr "Taste"
-
-#: gui/shortcutmodel.cpp:94
-msgid "Function"
-msgstr "Funktion"
+#: gui/adddictdialog.cpp:36
+msgid "&Path:"
+msgstr "&Pfad:"
 
 #: gui/shortcutwidget.cpp:37
 msgid "&Rule:"
 msgstr "&Regel:"
 
-#: gui/shortcutwidget.cpp:117
-msgid "Shortcut Manager"
-msgstr "Kurybefehlverwaltung"
+#: gui/adddictdialog.cpp:35
+msgid "&Type:"
+msgstr "&Taste:"
 
-#: gui/shortcutwidget.cpp:130
-msgid "Save Changes"
-msgstr "Änderungen speichern"
+#: src/fcitx-kkc.desc:48
+msgid "Auto correct input sequence"
+msgstr "Eingabesequenz automatisch korrigieren"
 
-#: gui/shortcutwidget.cpp:131
-msgid ""
-"The content has changed.\n"
-"Do you want to save the changes or discard them?"
-msgstr "Der Inhalt hat sich geändert.\nMöchten Sie die Änderungen speichern oder verwerfen?"
+#: src/fcitx-kkc.desc:32
+msgid "Candidate List Layout"
+msgstr "Layout der Kandidatenliste"
+
+#: src/fcitx-kkc.desc:58
+msgid "Candidates Page Down"
+msgstr "Kandidaten Seite zurück"
+
+#: src/fcitx-kkc.desc:53
+msgid "Candidates Page Up"
+msgstr "Kandidaten Seite weiter"
+
+#: src/fcitx-kkc.desc:68
+msgid "Cursor Down"
+msgstr "Cursor runter"
+
+#: src/fcitx-kkc.desc:63
+msgid "Cursor Up"
+msgstr "Cursor hoch"
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Dictionary"
+msgstr "Wörterbuch"
+
+#: gui/dictwidget.cpp:56
+msgid "Dictionary Manager"
+msgstr "Wörterbuchverwaltung"
+
+#: gui/shortcutmodel.cpp:53 src/kkc.c:86 src/fcitx-kkc.desc:21
+msgid "Direct input"
+msgstr "Direkte Eingabe"
+
+#: gui/shortcutmodel.cpp:95
+msgid "Function"
+msgstr "Funktion"
+
+#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:23
+#: src/fcitx-kkc.desc:30 src/fcitx-kkc.desc:39 src/fcitx-kkc.desc:46
+#: src/fcitx-kkc.desc:51 src/fcitx-kkc.desc:56 src/fcitx-kkc.desc:61
+#: src/fcitx-kkc.desc:66 src/fcitx-kkc.desc:71
+msgid "General"
+msgstr "Generell"
+
+#: src/fcitx-kkc.desc:34
+msgid "Global"
+msgstr "Global"
+
+#: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
+msgid "Half width Katakana"
+msgstr "Halbweites Katakana"
+
+#: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
+msgid "Hiragana"
+msgstr "Hiragana"
+
+#: src/fcitx-kkc.desc:36
+msgid "Horizontal"
+msgstr "Waagerecht"
+
+#: src/fcitx-kkc.desc:13
+msgid "Initial Input Mode"
+msgstr "Eingabemodus beim Start"
+
+#: gui/shortcutmodel.cpp:91 src/kkc.c:203
+msgid "Input Mode"
+msgstr "Eingabemodus"
+
+#: src/fcitx-kkc.desc:6
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: src/kkc.c:177 src/kkc.conf.in:3
+msgid "Kana Kanji"
+msgstr "Kana Kanji"
+
+#: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
+msgid "Katakana"
+msgstr "Katakana"
+
+#: gui/shortcutmodel.cpp:93
+msgid "Key"
+msgstr "Taste"
 
 #: gui/shortcutwidget.cpp:155
 msgid "Key Conflict"
@@ -118,97 +138,80 @@ msgstr "Tasten Konflikt"
 msgid "Key to add is conflict with existing shortcut."
 msgstr "Die hinzuzufügende Kurzbefehl wird schon verwendet. "
 
-#: src/kkc.c:176 src/kkc.conf.in:3
-msgid "Kana Kanji"
-msgstr "Kana Kanji"
-
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
 msgstr "Kkc Addon von Fcitx"
 
-#: src/fcitx-kkc.conf.in:4
-msgid "This is a template of a simple Fcitx Module"
-msgstr "Das ist eine Vorlage für ein einfaches Fcitx-Modul"
+#: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
+#: src/fcitx-kkc.desc:19
+msgid "Latin"
+msgstr "Lateinisch"
 
-#: src/fcitx-kkc.conf.in:11
-msgid "Dictionary"
-msgstr "Wörterbuch"
+#: src/fcitx-kkc.desc:41
+msgid "Number candidate of Triggers To Show Candidate Window"
+msgstr "Anzahl der Kanditaten, bei der das Kandidatenfenster angezeigt wird"
 
-#: src/fcitx-kkc.conf.in:11
-msgid "Shortcut"
-msgstr "Kurzbefehl"
-
-#: src/fcitx-kkc.desc:1 src/fcitx-kkc.desc:11 src/fcitx-kkc.desc:22
-#: src/fcitx-kkc.desc:29 src/fcitx-kkc.desc:38 src/fcitx-kkc.desc:45
-#: src/fcitx-kkc.desc:50 src/fcitx-kkc.desc:55 src/fcitx-kkc.desc:60
-#: src/fcitx-kkc.desc:65 src/fcitx-kkc.desc:70
-msgid "General"
-msgstr "Generell"
+#: src/fcitx-kkc.desc:25
+msgid "Page size"
+msgstr "Seitengröße"
 
 #: src/fcitx-kkc.desc:3
 msgid "Punctuation Style"
 msgstr "Interpunktionsstil"
 
-#: src/fcitx-kkc.desc:6
-msgid "Japanese"
-msgstr "Japanisch"
+#: gui/shortcutwidget.cpp:130
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: gui/adddictdialog.cpp:91
+msgid "Select Dictionary Directory"
+msgstr "Wörterbuchverzeichnis auswählen"
+
+#: gui/adddictdialog.cpp:77
+msgid "Select Dictionary File"
+msgstr "Wörterbuchdatei auswählen"
+
+#: src/fcitx-kkc.conf.in:11
+msgid "Shortcut"
+msgstr "Kurzbefehl"
+
+#: gui/shortcutwidget.cpp:117
+msgid "Shortcut Manager"
+msgstr "Kurybefehlverwaltung"
+
+#: src/fcitx-kkc.desc:73
+msgid "Show Annotation"
+msgstr "Anmerkungen zeigen"
+
+#: gui/adddictdialog.cpp:37
+msgid "System"
+msgstr "System"
+
+#: gui/shortcutwidget.cpp:131
+msgid ""
+"The content has changed.\n"
+"Do you want to save the changes or discard them?"
+msgstr ""
+"Der Inhalt hat sich geändert.\n"
+"Möchten Sie die Änderungen speichern oder verwerfen?"
+
+#: src/fcitx-kkc.conf.in:4
+msgid "This is a template of a simple Fcitx Module"
+msgstr "Das ist eine Vorlage für ein einfaches Fcitx-Modul"
+
+#: gui/adddictdialog.cpp:38
+msgid "User"
+msgstr "Benutzer"
+
+#: src/fcitx-kkc.desc:35
+msgid "Vertical"
+msgstr "Senkrecht"
+
+#: gui/shortcutmodel.cpp:52 src/kkc.c:85 src/fcitx-kkc.desc:8
+#: src/fcitx-kkc.desc:20
+msgid "Wide latin"
+msgstr "Wide latin"
 
 #: src/fcitx-kkc.desc:9
 msgid "Wide latin Japanese"
 msgstr "Wide latin Japanese"
-
-#: src/fcitx-kkc.desc:13
-msgid "Initial Input Mode"
-msgstr "Eingabemodus beim Start"
-
-#: src/fcitx-kkc.desc:19
-msgid "Direct input"
-msgstr "Direkte Eingabe"
-
-#: src/fcitx-kkc.desc:24
-msgid "Page size"
-msgstr "Seitengröße"
-
-#: src/fcitx-kkc.desc:31
-msgid "Candidate List Layout"
-msgstr "Layout der Kandidatenliste"
-
-#: src/fcitx-kkc.desc:33
-msgid "Global"
-msgstr "Global"
-
-#: src/fcitx-kkc.desc:34
-msgid "Vertical"
-msgstr "Senkrecht"
-
-#: src/fcitx-kkc.desc:35
-msgid "Horizontal"
-msgstr "Waagerecht"
-
-#: src/fcitx-kkc.desc:40
-msgid "Number candidate of Triggers To Show Candidate Window"
-msgstr "Anzahl der Kanditaten, bei der das Kandidatenfenster angezeigt wird"
-
-#: src/fcitx-kkc.desc:47
-msgid "Auto correct input sequence"
-msgstr "Eingabesequenz automatisch korrigieren"
-
-#: src/fcitx-kkc.desc:52
-msgid "Candidates Page Up"
-msgstr "Kandidaten Seite weiter"
-
-#: src/fcitx-kkc.desc:57
-msgid "Candidates Page Down"
-msgstr "Kandidaten Seite zurück"
-
-#: src/fcitx-kkc.desc:62
-msgid "Cursor Up"
-msgstr "Cursor hoch"
-
-#: src/fcitx-kkc.desc:67
-msgid "Cursor Down"
-msgstr "Cursor runter"
-
-#: src/fcitx-kkc.desc:72
-msgid "Show Annotation"
-msgstr "Anmerkungen zeigen"
