@@ -4,13 +4,14 @@
 #
 # Translators:
 # Bon Keun Seo <scobyseo@gmail.com>, 2017
+# MarongHappy <daemul72@gmail.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2020-01-13 00:01-0800\n"
-"PO-Revision-Date: 2017-09-19 16:17+0000\n"
-"Last-Translator: Bon Keun Seo <scobyseo@gmail.com>\n"
+"POT-Creation-Date: 2020-03-25 00:03-0700\n"
+"PO-Revision-Date: 2020-03-24 16:51+0000\n"
+"Last-Translator: MarongHappy <daemul72@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/fcitx/fcitx/language/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +49,7 @@ msgstr "입력 순서 자동 교정"
 
 #: src/fcitx-kkc.desc:32
 msgid "Candidate List Layout"
-msgstr "후보 목록 모양"
+msgstr "후보 목록 자판"
 
 #: src/fcitx-kkc.desc:58
 msgid "Candidates Page Down"
@@ -148,7 +149,7 @@ msgstr "로마자"
 
 #: src/fcitx-kkc.desc:41
 msgid "Number candidate of Triggers To Show Candidate Window"
-msgstr "후보 창을 보이기 위한 후보의 수"
+msgstr "후보 창을 표시할 트리거 후보 수"
 
 #: src/fcitx-kkc.desc:25
 msgid "Page size"
@@ -180,7 +181,7 @@ msgstr "단축키 관리자"
 
 #: src/fcitx-kkc.desc:73
 msgid "Show Annotation"
-msgstr "주석 보이기"
+msgstr "주석 표시"
 
 #: gui/adddictdialog.cpp:37
 msgid "System"
