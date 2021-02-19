@@ -4,16 +4,17 @@
 #
 # Translators:
 # Bon Keun Seo <scobyseo@gmail.com>, 2017
-# JungHee Lee <daemul72@gmail.com>, 2020
-# JungHee Lee <daemul72@gmail.com>, 2020
-# JungHee Lee <daemul72@gmail.com>, 2020
+# Bruce Lee <daemul72@gmail.com>, 2021
+# Bruce Lee <daemul72@gmail.com>, 2020
+# Bruce Lee <daemul72@gmail.com>, 2020
+# Bruce Lee <daemul72@gmail.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2020-12-26 20:26+0000\n"
-"PO-Revision-Date: 2020-12-26 04:37+0000\n"
-"Last-Translator: JungHee Lee <daemul72@gmail.com>\n"
+"POT-Creation-Date: 2021-02-19 05:14+0000\n"
+"PO-Revision-Date: 2021-02-10 14:02+0000\n"
+"Last-Translator: Bruce Lee <daemul72@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/fcitx/fcitx/language/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -142,7 +143,7 @@ msgstr "추가하려는 키가 기존 단축기와 겹칩니다."
 
 #: src/fcitx-kkc.conf.in:3
 msgid "Kkc Addon of Fcitx"
-msgstr "Fcitx를 위한 KKC 부가기능"
+msgstr "Fcitx를 위한 KKC 애드온"
 
 #: gui/shortcutmodel.cpp:51 src/kkc.c:84 src/fcitx-kkc.desc:7
 #: src/fcitx-kkc.desc:19
