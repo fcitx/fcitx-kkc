@@ -4,17 +4,18 @@
 #
 # Translators:
 # Bon Keun Seo <scobyseo@gmail.com>, 2017
-# Bruce Lee <daemul72@gmail.com>, 2021
-# Bruce Lee <daemul72@gmail.com>, 2020
-# Bruce Lee <daemul72@gmail.com>, 2020
-# Bruce Lee <daemul72@gmail.com>, 2020
+# Junghee Lee <daemul72@gmail.com>, 2021
+# Junghee Lee <daemul72@gmail.com>, 2020
+# Junghee Lee <daemul72@gmail.com>, 2022
+# Junghee Lee <daemul72@gmail.com>, 2020
+# Junghee Lee <daemul72@gmail.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2021-02-19 05:14+0000\n"
-"PO-Revision-Date: 2021-02-10 14:02+0000\n"
-"Last-Translator: Bruce Lee <daemul72@gmail.com>\n"
+"POT-Creation-Date: 2022-04-10 20:28+0000\n"
+"PO-Revision-Date: 2013-04-04 14:00+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022\n"
 "Language-Team: Korean (http://www.transifex.com/fcitx/fcitx/language/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -64,11 +65,11 @@ msgstr "이전 후보 페이지"
 
 #: src/fcitx-kkc.desc:68
 msgid "Cursor Down"
-msgstr "커서를 아래로"
+msgstr "커서 아래로"
 
 #: src/fcitx-kkc.desc:63
 msgid "Cursor Up"
-msgstr "커서를 위로"
+msgstr "커서 위로"
 
 #: src/fcitx-kkc.conf.in:11
 msgid "Dictionary"
@@ -99,7 +100,7 @@ msgstr "전역"
 
 #: gui/shortcutmodel.cpp:50 src/kkc.c:83 src/fcitx-kkc.desc:18
 msgid "Half width Katakana"
-msgstr "반각 가타가나"
+msgstr "반각 가타카나"
 
 #: gui/shortcutmodel.cpp:48 src/kkc.c:81 src/fcitx-kkc.desc:16
 msgid "Hiragana"
@@ -123,11 +124,11 @@ msgstr "일본어"
 
 #: src/kkc.c:177 src/kkc.conf.in:3
 msgid "Kana Kanji"
-msgstr "가나 한자"
+msgstr "카나 한자"
 
 #: gui/shortcutmodel.cpp:49 src/kkc.c:82 src/fcitx-kkc.desc:17
 msgid "Katakana"
-msgstr "가타가나"
+msgstr "가타카나"
 
 #: gui/shortcutmodel.cpp:93
 msgid "Key"
@@ -152,7 +153,7 @@ msgstr "로마자"
 
 #: src/fcitx-kkc.desc:41
 msgid "Number candidate of Triggers To Show Candidate Window"
-msgstr "후보 창을 표시할 전환 후보 수"
+msgstr "후보 단어 창의 표시를 트리거한 키 입력 수"
 
 #: src/fcitx-kkc.desc:25
 msgid "Page size"
@@ -200,7 +201,7 @@ msgstr ""
 
 #: src/fcitx-kkc.conf.in:4
 msgid "This is a template of a simple Fcitx Module"
-msgstr "단순 Fcitx 모듈의 템플릿이라는 문자열을 안지웠네용."
+msgstr "이것은 간단한 Fcitx 모듈의 템플릿입니다."
 
 #: gui/adddictdialog.cpp:38
 msgid "User"
