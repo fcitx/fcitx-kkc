@@ -5,14 +5,16 @@
 # Translators:
 # BrLi <rainman59118@gmail.com>, 2014
 # fhoshino <fh@pinchia.com>, 2014
+# fhoshino <fh@pinchia.com>, 2014
+# Haowei Hsu, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2020-01-13 00:01-0800\n"
-"PO-Revision-Date: 2017-09-19 16:17+0000\n"
-"Last-Translator: BrLi <rainman59118@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/fcitx/fcitx/"
+"POT-Creation-Date: 2023-08-07 20:26+0000\n"
+"PO-Revision-Date: 2013-04-04 14:00+0000\n"
+"Last-Translator: Haowei Hsu, 2023\n"
+"Language-Team: Chinese (Taiwan) (http://app.transifex.com/fcitx/fcitx/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +52,7 @@ msgstr "自動修正輸入次序"
 
 #: src/fcitx-kkc.desc:32
 msgid "Candidate List Layout"
-msgstr "候選詞清單"
+msgstr "候選詞列表配置"
 
 #: src/fcitx-kkc.desc:58
 msgid "Candidates Page Down"
